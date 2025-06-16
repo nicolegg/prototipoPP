@@ -111,7 +111,7 @@
                                     <div class="card-body">
                                         <ul class="nav nav-pills bg-nav-pills nav-justified mb-3">
                                             <li class="nav-item">
-                                                <a href="#billing-information" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
+                                                <a href="#billing-information" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
                                                     <i class="mdi mdi-account-cash-outline font-18"></i>
                                                     <span class="d-none d-lg-block">Fase 1 - Descubrir</span>
                                                 </a>
@@ -129,7 +129,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#fase4" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
+                                                <a href="#fase4" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
                                                     <i class="mdi mdi-laptop-windows font-18"></i>
                                                     <span class="d-none d-lg-block">Fase 4 - Realizar</span>
                                                 </a>
@@ -149,7 +149,7 @@
                                         </ul>
                                         <div class="tab-content">
                                             <!-- fase1-->
-                                            <div class="tab-pane show active" id="billing-information">
+                                            <div class="tab-pane show" id="billing-information">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="card">
@@ -711,8 +711,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- fase3-->
-                                            <div class="tab-pane" id="fase4">
+                                            <!-- fase4-->
+                                            <div class="tab-pane active" id="fase4">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="card">
@@ -729,133 +729,204 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="page-aside-right">
-                                                                    <div class="d-flex justify-content-between align-items-center">
-                                                                        <div class="app-search">
-                                                                            <form>
-                                                                                <div class="mb-2 position-relative">
-                                                                                    <input type="text" class="form-control" placeholder="Buscar archivos...">
-                                                                                    <span class="mdi mdi-magnify search-icon"></span>
-                                                                                </div>
-                                                                            </form>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="mt-3">
-                                                                        <h5 class="mb-2">Lista de Documentos</h5>
-                                                                        <div class="row mx-n1 g-0">
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-16"></i>
-                                                                                                    </span>
+                                                                    <div class="card">
+                                                                        <div class="card-body">
+                                                                            <div class="row">
+                                                                                <!-- start projects-->
+                                                                                <div class="col-xxl-3 col-lg-4">
+                                                                                    <div class="pe-xl-3">
+                                                                                        <h5 class="mt-0 mb-3">Projects</h5>
+                                                                                        <!-- start search box -->
+                                                                                        <div class="app-search">
+                                                                                            <form>
+                                                                                                <div class="mb-2 position-relative">
+                                                                                                    <input type="text" class="form-control" placeholder="search by name...">
+                                                                                                    <span class="mdi mdi-magnify search-icon"></span>
                                                                                                 </div>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">listagaps.pdf</a>
-                                                                                                <p class="mb-0 font-13">7.5 MB</p>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
+                                                                                            </form>
+                                                                                        </div>
+                                                                                        <!-- end search box -->
+
+                                                                                        <div class="row">
+                                                                                            <div class="col">
+                                                                                                <div data-simplebar="" style="max-height: 535px;">
+                                                                                                    <a href="javascript:void(0);" class="text-body">
+                                                                                                        <div class="d-flex mt-2 p-2">
+                                                                                                            <div class="avatar-sm d-table">
+                                                                                                                <span class="avatar-title bg-success-lighten rounded-circle text-success">
+                                                                                                                    <i class='uil uil-moonset font-24'></i>
+                                                                                                                </span>
+                                                                                                            </div>
+                                                                                                            <div class="ms-2">
+                                                                                                                <h5 class="mt-0 mb-0">
+                                                                                                                    Lunar
+                                                                                                                    <span class="badge badge-success-lighten ms-1">On Track</span>
+                                                                                                                </h5>
+                                                                                                                <p class="mt-1 mb-0 text-muted">
+                                                                                                                    ID: proj101
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </a>
+
+                                                                                                    <a href="javascript:void(0);" class="text-body">
+                                                                                                        <div class="d-flex bg-light p-2">
+                                                                                                            <div class="avatar-sm d-table">
+                                                                                                                <span class="avatar-title bg-success-lighten rounded-circle text-success">
+                                                                                                                    <i class='uil uil-moon-eclipse font-24'></i>
+                                                                                                                </span>
+                                                                                                            </div>
+                                                                                                            <div class="ms-2">
+                                                                                                                <h5 class="mt-0 mb-0">
+                                                                                                                    Dark Moon
+                                                                                                                    <span class="badge badge-success-lighten ms-1">On
+                                                                                                                        Track</span>
+                                                                                                                </h5>
+                                                                                                                <p class="mt-1 mb-0 text-muted">
+                                                                                                                    ID: proj102
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </a>
+
+                                                                                                    <a href="javascript:void(0);" class="text-body">
+                                                                                                        <div class="d-flex mt-1 px-2 py-2">
+                                                                                                            <div class="avatar-sm d-table">
+                                                                                                                <span class="avatar-title bg-warning-lighten rounded-circle text-warning">
+                                                                                                                    <i class='uil uil-mountains font-24'></i>
+                                                                                                                </span>
+                                                                                                            </div>
+                                                                                                            <div class="ms-2">
+                                                                                                                <h5 class="mt-0 mb-0">
+                                                                                                                    Aurora
+                                                                                                                    <span class="badge badge-warning-lighten ms-1">Locked</span>
+                                                                                                                </h5>
+                                                                                                                <p class="mt-1 mb-0 text-muted">
+                                                                                                                    ID: proj103
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </a>
+
+                                                                                                    <a href="javascript:void(0);" class="text-body">
+                                                                                                        <div class="d-flex mt-1 px-2 py-2">
+                                                                                                            <div class="avatar-sm d-table">
+                                                                                                                <span class="avatar-title bg-warning-lighten rounded-circle text-warning">
+                                                                                                                    <i class='uil uil-moon font-24'></i>
+                                                                                                                </span>
+                                                                                                            </div>
+                                                                                                            <div class="ms-2">
+                                                                                                                <h5 class="mt-0 mb-0">
+                                                                                                                    Blue Moon
+                                                                                                                    <span class="badge badge-warning-lighten ms-1">Locked</span>
+                                                                                                                </h5>
+                                                                                                                <p class="mt-1 mb-0 text-muted">
+                                                                                                                    ID: proj104
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </a>
+
+                                                                                                    <a href="javascript:void(0);" class="text-body">
+                                                                                                        <div class="d-flex mt-1 px-2 py-2">
+                                                                                                            <div class="avatar-sm d-table">
+                                                                                                                <span class="avatar-title bg-danger-lighten rounded-circle text-danger">
+                                                                                                                    <i class='uil uil-ship font-24'></i>
+                                                                                                                </span>
+                                                                                                            </div>
+                                                                                                            <div class="ms-2">
+                                                                                                                <h5 class="mt-0 mb-0">
+                                                                                                                    Casanova
+                                                                                                                    <span class="badge badge-danger-lighten ms-1">Delayed</span>
+                                                                                                                </h5>
+                                                                                                                <p class="mt-1 mb-0 text-muted">
+                                                                                                                    ID: proj106
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </a>
+
+                                                                                                    <a href="javascript:void(0);" class="text-body">
+                                                                                                        <div class="d-flex mt-1 px-2 py-2">
+                                                                                                            <div class="avatar-sm d-table">
+                                                                                                                <span class="avatar-title bg-success-lighten rounded-circle text-success">
+                                                                                                                    <i class='uil uil-subway-alt font-24'></i>
+                                                                                                                </span>
+                                                                                                            </div>
+                                                                                                            <div class="ms-2">
+                                                                                                                <h5 class="mt-0 mb-0">
+                                                                                                                    Darwin
+                                                                                                                    <span class="badge badge-success-lighten ms-1">On
+                                                                                                                        Track</span>
+                                                                                                                </h5>
+                                                                                                                <p class="mt-1 mb-0 text-muted">
+                                                                                                                    ID: proj107
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </a>
+
+                                                                                                    <a href="javascript:void(0);" class="text-body">
+                                                                                                        <div class="d-flex mt-1 px-2 py-2">
+                                                                                                            <div class="avatar-sm d-table">
+                                                                                                                <span class="avatar-title bg-danger-lighten rounded-circle text-danger">
+                                                                                                                    <i class='uil uil-gold font-24'></i>
+                                                                                                                </span>
+                                                                                                            </div>
+                                                                                                            <div class="ms-2">
+                                                                                                                <h5 class="mt-0 mb-0">
+                                                                                                                    Eagle
+                                                                                                                    <span class="badge badge-danger-lighten ms-1">Delayed</span>
+                                                                                                                </h5>
+                                                                                                                <p class="mt-1 mb-0 text-muted">
+                                                                                                                    ID: proj108
+                                                                                                                </p>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </a>
+                                                                                                </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
+                                                                                <!-- end projects -->
+
+                                                                                <!-- gantt view -->
+                                                                                <div class="col-xxl-9 mt-4 mt-xl-0 col-lg-8">
+                                                                                    <div class="ps-xl-3">
+                                                                                        <div class="row">
                                                                                             <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-16"></i>
-                                                                                                    </span>
+                                                                                                <a href="javascript: void(0);" class="btn btn-success btn-sm mb-2">Add New Task</a>
+                                                                                            </div>
+                                                                                            <div class="col text-sm-end">
+                                                                                                <div class="btn-group btn-group-sm mb-2" data-bs-toggle="buttons" id="modes-filter">
+                                                                                                    <label class="btn btn-primary d-none d-sm-inline-block">
+                                                                                                        <input class="btn-check" type="radio" name="modes" id="qday" value="Quarter Day"> Quarter Day
+                                                                                                    </label>
+                                                                                                    <label class="btn btn-primary">
+                                                                                                        <input class="btn-check" type="radio" name="modes" id="hday" value="Half Day"> Half Day
+                                                                                                    </label>
+                                                                                                    <label class="btn btn-primary">
+                                                                                                        <input class="btn-check" type="radio" name="modes" id="day" value="Day"> Day
+                                                                                                    </label>
+                                                                                                    <label class="btn btn-primary active">
+                                                                                                        <input class="btn-check" type="radio" name="modes" id="week" value="Week" checked=""> Week
+                                                                                                    </label>
+                                                                                                    <label class="btn btn-primary">
+                                                                                                        <input class="btn-check" type="radio" name="modes" id="month" value="Month"> Month
+                                                                                                    </label>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">Workbook.pdf</a>
-                                                                                                <p class="mb-0 font-13">7.5 MB</p>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
+                                                                                        </div>
+                                                                                        
+                                                                                        <div class="row">
+                                                                                            <div class="col mt-3">
+                                                                                                <svg id="tasks-gantt"></svg>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-18"></i>
-                                                                                                    </span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">Integraciones.pdf</a>
-                                                                                                <p class="mb-0 font-13">784 KB</p>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-18"></i>
-                                                                                                    </span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">MetoDesa.pdf</a>
-                                                                                                <p class="mb-0 font-13">784 KB</p>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-18"></i>
-                                                                                                    </span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">AproFase.pdf</a>
-                                                                                                <p class="mb-0 font-13">784 KB</p>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
+                                                                                <!-- end gantt view -->
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -892,24 +963,11 @@
         <script src="assets/js/vendor.min.js"></script>
         <script src="assets/js/app.min.js"></script>
 
-        <!-- third party:js -->
-        <script src="assets/js/vendor/apexcharts.min.js"></script>
-        <!-- third party end -->
+        <!-- gantt js-->
+        <script src="assets/js/vendor/frappe-gantt.min.js"></script>
 
-        <!-- Chat js -->
-        <script src="assets/js/ui/component.chat.js"></script>
-
-        <!-- Todo js -->
-        <script src="assets/js/ui/component.todo.js"></script>
-
-        <!-- demo:js -->
-        <script src="assets/js/pages/demo.widgets.js"></script>
-
-        <!-- Dropzone js -->
-        <script src="assets/js/vendor/dropzone.min.js"></script>
-
-        <!-- File upload js -->
-        <script src="assets/js/ui/component.fileupload.js"></script>
+        <!-- demo app -->
+        <script src="assets/js/pages/demo.project-gantt.js"></script>
         
     </body>
 </html>

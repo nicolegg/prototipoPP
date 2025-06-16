@@ -111,7 +111,7 @@
                                     <div class="card-body">
                                         <ul class="nav nav-pills bg-nav-pills nav-justified mb-3">
                                             <li class="nav-item">
-                                                <a href="#billing-information" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
+                                                <a href="#billing-information" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
                                                     <i class="mdi mdi-account-cash-outline font-18"></i>
                                                     <span class="d-none d-lg-block">Fase 1 - Descubrir</span>
                                                 </a>
@@ -129,7 +129,7 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#fase4" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
+                                                <a href="#fase4" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
                                                     <i class="mdi mdi-laptop-windows font-18"></i>
                                                     <span class="d-none d-lg-block">Fase 4 - Realizar</span>
                                                 </a>
@@ -149,7 +149,7 @@
                                         </ul>
                                         <div class="tab-content">
                                             <!-- fase1-->
-                                            <div class="tab-pane show active" id="billing-information">
+                                            <div class="tab-pane show" id="billing-information">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="card">
@@ -711,8 +711,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- fase3-->
-                                            <div class="tab-pane" id="fase4">
+                                            <!-- fase4-->
+                                            <div class="tab-pane active" id="fase4">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="card">
@@ -729,129 +729,308 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="page-aside-right">
-                                                                    <div class="d-flex justify-content-between align-items-center">
-                                                                        <div class="app-search">
-                                                                            <form>
-                                                                                <div class="mb-2 position-relative">
-                                                                                    <input type="text" class="form-control" placeholder="Buscar archivos...">
-                                                                                    <span class="mdi mdi-magnify search-icon"></span>
+                                                                    <div class="mt-2">
+                                                                        <h5 class="m-0 pb-2">
+                                                                            <a class="text-dark" data-bs-toggle="collapse" href="#todayTasks" role="button" aria-expanded="false" aria-controls="todayTasks">
+                                                                                <i class='uil uil-angle-down font-18'></i>Sprint 1 <span class="text-muted">(10)</span>
+                                                                            </a>
+                                                                        </h5>
+                                                                        <div class="collapse show" id="todayTasks">
+                                                                            <div class="card mb-0">
+                                                                                <div class="card-body">
+                                                                                    <div class="row justify-content-sm-between">
+                                                                                        <div class="col-sm-6 mb-2 mb-sm-0">
+                                                                                            <div class="form-check">
+                                                                                                <input type="checkbox" class="form-check-input" id="task1">
+                                                                                                <label class="form-check-label" for="task1">
+                                                                                                    Nombre de la tarea 1
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <div id="tooltip-container">
+                                                                                                    <img src="assets/images/users/avatar-9.jpg" alt="image" class="avatar-xs rounded-circle me-1" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assigned to Arya S">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <ul class="list-inline font-13 text-end">
+                                                                                                        <li class="list-inline-item">
+                                                                                                            <i class='uil uil-schedule font-16 me-1'></i> Today 10am
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-1">
+                                                                                                            <i class='uil uil-comment-message font-16 me-1'></i> 21
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-2">
+                                                                                                            <span class="badge badge-warning-lighten p-1">En progreso</span>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row justify-content-sm-between mt-2">
+                                                                                        <div class="col-sm-6 mb-2 mb-sm-0">
+                                                                                            <div class="form-check">
+                                                                                                <input type="checkbox" class="form-check-input" id="task2">
+                                                                                                <label class="form-check-label" for="task2">
+                                                                                                    nombre de la tarea 2
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <div id="tooltip-container1">
+                                                                                                    <img src="assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle me-1" data-bs-container="#tooltip-container1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assigned to James B">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <ul class="list-inline font-13 text-end">
+                                                                                                        <li class="list-inline-item">
+                                                                                                            <i class='uil uil-schedule font-16 me-1'></i> Today 4pm
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-1">
+                                                                                                            <i class='uil uil-comment-message font-16 me-1'></i> 48
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-2">
+                                                                                                            <span class="badge badge-success-lighten p-1">terminado</span>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row justify-content-sm-between mt-2">
+                                                                                        <div class="col-sm-6 mb-2 mb-sm-0">
+                                                                                            <div class="form-check">
+                                                                                                <input type="checkbox" class="form-check-input" id="task3">
+                                                                                                <label class="form-check-label" for="task3">
+                                                                                                    nombre de la tarea 3
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <div id="tooltip-container2">
+                                                                                                    <img src="assets/images/users/avatar-4.jpg" alt="image" class="avatar-xs rounded-circle me-1" data-bs-container="#tooltip-container2" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assigned to Kevin C">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <ul class="list-inline font-13 text-end mb-0">
+                                                                                                        <li class="list-inline-item">
+                                                                                                            <i class='uil uil-schedule font-16 me-1'></i> Today 6pm
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-1">
+                                                                                                            <i class='uil uil-comment-message font-16 me-1'></i> 73
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-2">
+                                                                                                            <span class="badge badge-danger-lighten p-1">cancelado</span>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </form>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="mt-3">
-                                                                        <h5 class="mb-2">Lista de Documentos</h5>
-                                                                        <div class="row mx-n1 g-0">
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-16"></i>
-                                                                                                    </span>
+                                                                    <div class="mt-4">
+                                                                        <h5 class="m-0 pb-2">
+                                                                            <a class="text-dark" data-bs-toggle="collapse" href="#upcomingTasks" role="button" aria-expanded="false" aria-controls="upcomingTasks">
+                                                                                <i class='uil uil-angle-down font-18'></i>Sprint 2 <span class="text-muted">(5)</span>
+                                                                            </a>
+                                                                        </h5>
+                                                                        <div class="collapse show" id="upcomingTasks">
+                                                                            <div class="card mb-0">
+                                                                                <div class="card-body">
+                                                                                    <div class="row justify-content-sm-between">
+                                                                                        <div class="col-sm-6 mb-2 mb-sm-0">
+                                                                                            <div class="form-check">
+                                                                                                <input type="checkbox" class="form-check-input" id="task4">
+                                                                                                <label class="form-check-label" for="task4">
+                                                                                                    nombre de la tarea 4
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <div id="tooltip-container3">
+                                                                                                    <img src="assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle me-1" data-bs-container="#tooltip-container3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assigned to James B">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <ul class="list-inline font-13 text-end">
+                                                                                                        <li class="list-inline-item">
+                                                                                                            <i class='uil uil-schedule font-16 me-1'></i> Tomorrow 7am
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-1">
+                                                                                                            <i class='uil uil-comment-message font-16 me-1'></i> 36
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-2">
+                                                                                                            <span class="badge badge-danger-lighten p-1">cancelado</span>
+                                                                                                        </li>
+                                                                                                    </ul>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">listagaps.pdf</a>
-                                                                                                <p class="mb-0 font-13">7.5 MB</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row justify-content-sm-between mt-2">
+                                                                                        <div class="col-sm-6 mb-2 mb-sm-0">
+                                                                                            <div class="form-check">
+                                                                                                <input type="checkbox" class="form-check-input" id="task5">
+                                                                                                <label class="form-check-label" for="task5">
+                                                                                                    nombre de la tarea 5
+                                                                                                </label>
                                                                                             </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <div id="tooltip-container4">
+                                                                                                    <img src="assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle me-1" data-bs-container="#tooltip-container4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assigned to James B">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <ul class="list-inline font-13 text-end">
+                                                                                                        <li class="list-inline-item">
+                                                                                                            <i class='uil uil-schedule font-16 me-1'></i> 27 Aug 10am
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-1">
+                                                                                                            <i class='uil uil-comment-message font-16 me-1'></i> 211
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-2">
+                                                                                                            <span class="badge badge-success-lighten p-1">terminado</span>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row justify-content-sm-between mt-2">
+                                                                                        <div class="col-sm-6 mb-2 mb-sm-0">
+                                                                                            <div class="form-check">
+                                                                                                <input type="checkbox" class="form-check-input" id="task6">
+                                                                                                <label class="form-check-label" for="task6">
+                                                                                                    nombre de la tarea 6
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <div id="tooltip-container5">
+                                                                                                    <img src="assets/images/users/avatar-7.jpg" alt="image" class="avatar-xs rounded-circle me-1" data-bs-container="#tooltip-container5" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assigned to Edward S">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <ul class="list-inline font-13 text-end mb-0">
+                                                                                                        <li class="list-inline-item">
+                                                                                                            <i class='uil uil-schedule font-16 me-1'></i> No Due Date
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-1">
+                                                                                                            <i class='uil uil-comment-message font-16 me-1'></i> 0
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-2">
+                                                                                                            <span class="badge badge-warning-lighten p-1">en progreso</span>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-16"></i>
-                                                                                                    </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mt-4 mb-4">
+                                                                        <h5 class="m-0 pb-2">
+                                                                            <a class="text-dark" data-bs-toggle="collapse" href="#otherTasks" role="button" aria-expanded="false" aria-controls="otherTasks">
+                                                                                <i class='uil uil-angle-down font-18'></i>Sprint 3 <span class="text-muted">(3)</span>
+                                                                            </a>
+                                                                        </h5>
+                                                                        <div class="collapse show" id="otherTasks">
+                                                                            <div class="card mb-0">
+                                                                                <div class="card-body">
+                                                                                    <div class="row justify-content-sm-between">
+                                                                                        <div class="col-sm-6 mb-2 mb-sm-0">
+                                                                                            <div class="form-check">
+                                                                                                <input type="checkbox" class="form-check-input" id="task7">
+                                                                                                <label class="form-check-label" for="task7">
+                                                                                                    nombre de la tarea 7
+                                                                                                </label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <div id="tooltip-container6">
+                                                                                                    <img src="assets/images/users/avatar-9.jpg" alt="image" class="avatar-xs rounded-circle me-1" data-bs-container="#tooltip-container6" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assigned to Arya S">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <ul class="list-inline font-13 text-end">
+                                                                                                        <li class="list-inline-item">
+                                                                                                            <i class='uil uil-schedule font-16 me-1'></i> Today 10am
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-1">
+                                                                                                            <i class='uil uil-comment-message font-16 me-1'></i> 71
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-2">
+                                                                                                            <span class="badge badge-warning-lighten p-1">en progreso</span>
+                                                                                                        </li>
+                                                                                                    </ul>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">Workbook.pdf</a>
-                                                                                                <p class="mb-0 font-13">7.5 MB</p>
+                                                                                        </div> 
+                                                                                    </div>
+                                                                                    <div class="row justify-content-sm-between mt-2">
+                                                                                        <div class="col-sm-6 mb-2 mb-sm-0">
+                                                                                            <div class="form-check">
+                                                                                                <input type="checkbox" class="form-check-input" id="task8">
+                                                                                                <label class="form-check-label" for="task8">
+                                                                                                    nombre de la tarea 8
+                                                                                                </label>
                                                                                             </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <div id="tooltip-container7">
+                                                                                                    <img src="assets/images/users/avatar-2.jpg" alt="image" class="avatar-xs rounded-circle me-1" data-bs-container="#tooltip-container7" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assigned to James B">
+                                                                                                </div>
+                                                                                                <div>
+                                                                                                    <ul class="list-inline font-13 text-end">
+                                                                                                        <li class="list-inline-item">
+                                                                                                            <i class='uil uil-schedule font-16 me-1'></i> No Due Date
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-1">
+                                                                                                            <i class='uil uil-comment-message font-16 me-1'></i> 0
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-2">
+                                                                                                            <span class="badge badge-warning-lighten p-1">en progreso</span>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-18"></i>
-                                                                                                    </span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">Integraciones.pdf</a>
-                                                                                                <p class="mb-0 font-13">784 KB</p>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
+                                                                                    <div class="row justify-content-sm-between mt-2">
+                                                                                        <div class="col-sm-6 mb-2 mb-sm-0">
+                                                                                            <div class="form-check">
+                                                                                                <input type="checkbox" class="form-check-input" id="task9">
+                                                                                                <label class="form-check-label" for="task9">
+                                                                                                    nombre de la tarea 9
+                                                                                                </label>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-18"></i>
-                                                                                                    </span>
+                                                                                        <div class="col-sm-6">
+                                                                                            <div class="d-flex justify-content-between">
+                                                                                                <div id="tooltip-container8">
+                                                                                                    <img src="assets/images/users/avatar-5.jpg" alt="image" class="avatar-xs rounded-circle me-1" data-bs-container="#tooltip-container8" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assigned to Gary H">
                                                                                                 </div>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">MetoDesa.pdf</a>
-                                                                                                <p class="mb-0 font-13">784 KB</p>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-xxl-4 col-lg-6">
-                                                                                <div class="card m-1 shadow-none border">
-                                                                                    <div class="p-2">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
-                                                                                                        <i class="mdi mdi-file-pdf-outline font-18"></i>
-                                                                                                    </span>
+                                                                                                <div>
+                                                                                                    <ul class="list-inline font-13 text-end mb-0">
+                                                                                                        <li class="list-inline-item">
+                                                                                                            <i class='uil uil-schedule font-16 me-1'></i> 10 Sep 3pm
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-1">
+                                                                                                            <i class='uil uil-comment-message font-16 me-1'></i> 9
+                                                                                                        </li>
+                                                                                                        <li class="list-inline-item ms-2">
+                                                                                                            <span class="badge badge-success-lighten p-1">terminado</span>
+                                                                                                        </li>
+                                                                                                    </ul>
                                                                                                 </div>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">AproFase.pdf</a>
-                                                                                                <p class="mb-0 font-13">784 KB</p>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
-                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>

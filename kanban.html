@@ -50,7 +50,7 @@
                         </li>
                         <li class="side-nav-item">
                             <a href="apps-chat.html" class="side-nav-link">
-                                <i class="uil-comments-alt"></i>
+                                <i class="uil-commentarios-alt"></i>
                                 <span> opción 2 </span>
                             </a>
                         </li>
@@ -111,7 +111,7 @@
                                     <div class="card-body">
                                         <ul class="nav nav-pills bg-nav-pills nav-justified mb-3">
                                             <li class="nav-item">
-                                                <a href="#billing-information" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
+                                                <a href="#billing-information" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
                                                     <i class="mdi mdi-account-cash-outline font-18"></i>
                                                     <span class="d-none d-lg-block">Fase 1 - Descubrir</span>
                                                 </a>
@@ -129,13 +129,13 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#fase4" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
+                                                <a href="#fase4" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 active">
                                                     <i class="mdi mdi-laptop-windows font-18"></i>
                                                     <span class="d-none d-lg-block">Fase 4 - Realizar</span>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a href="#payment-information" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
+                                                <a href="#fase5" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
                                                     <i class="mdi mdi-format-list-bulleted-square font-18"></i>
                                                     <span class="d-none d-lg-block">Fase 5 - Implementar</span>
                                                 </a>
@@ -149,7 +149,7 @@
                                         </ul>
                                         <div class="tab-content">
                                             <!-- fase1-->
-                                            <div class="tab-pane show active" id="billing-information">
+                                            <div class="tab-pane show" id="billing-information">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="card">
@@ -711,8 +711,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- fase3-->
-                                            <div class="tab-pane" id="fase4">
+                                            <!-- fase4-->
+                                            <div class="tab-pane active" id="fase4">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="card">
@@ -726,6 +726,476 @@
                                                                         <a href="tareafase4.html" class="list-group-item border-0"><i class="mdi mdi-clipboard-list-outline font-18 align-middle me-2"></i>Tareas</a>
                                                                         <a href="kanban.html" class="list-group-item border-0"><i class="mdi mdi-file-table-box-multiple-outline font-18 align-middle me-2"></i>kanban</a>
                                                                         <a href="gantt.html" class="list-group-item border-0"><i class="mdi mdi-file-tree-outline font-18 align-middle me-2"></i>Gantt</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="page-aside-right">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="board">
+                                                                                <div class="tasks" data-plugin="dragula" data-containers='["task-list-one", "task-list-two", "task-list-three", "task-list-four"]'>
+                                                                                    <h5 class="mt-0 task-header">TODO (3)</h5>
+                                                                                    
+                                                                                    <div id="task-list-one" class="task-list-items">
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">18 Jul 2018</small>
+                                                                                                <span class="badge bg-danger">Cancelar</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 1</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        iOS
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>74</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-2.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Robert Carlile</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">18 Jul 2018</small>
+                                                                                                <span class="badge bg-secondary text-light">En Progreso</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 2</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        Hyper
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>28</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Coder Themes</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">11 Jul 2018</small>
+                                                                                                <span class="badge bg-success">Terminado</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 3</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        CRM
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>68</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-3.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Lucas Hardy</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+                                                                                        
+                                                                                    </div> <!-- end company-list-1-->
+                                                                                </div>
+
+                                                                                <div class="tasks">
+                                                                                    <h5 class="mt-0 task-header text-uppercase">En progreso (2)</h5>
+                                                                                    
+                                                                                    <div id="task-list-two" class="task-list-items">
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">22 Jun 2018</small>
+                                                                                                <span class="badge bg-secondary text-light">En Progreso</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 4</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        Hyper
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>17</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-5.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Sean White</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">19 Jun 2018</small>
+                                                                                                <span class="badge bg-success">Terminado</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 5</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        CRM
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>48</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-6.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Louis Allen</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+
+                                                                                    </div> <!-- end company-list-2-->
+                                                                                </div>
+
+
+                                                                                <div class="tasks">
+                                                                                    <h5 class="mt-0 task-header text-uppercase">Revisar (4)</h5>
+                                                                                    <div id="task-list-three" class="task-list-items">
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">2 May 2018</small>
+                                                                                                <span class="badge bg-danger">Cancelar</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 6</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        CRM
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>65</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Coder Themes</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">7 May 2018</small>
+                                                                                                <span class="badge bg-secondary text-light">En Progreso</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 7</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        CRM
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>106</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-9.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Zak Turnbull</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">8 Jul 2018</small>
+                                                                                                <span class="badge bg-secondary text-light">En Progreso</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 8</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        Design
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>95</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-8.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Lily Parkin</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">22 Jul 2018</small>
+                                                                                                <span class="badge bg-danger">Cancelar</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 9</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        CRM
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>39</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-4.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Riley Steele</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+
+                                                                                    </div> <!-- end company-list-3-->
+                                                                                </div>
+
+                                                                                <div class="tasks">
+                                                                                    <h5 class="mt-0 task-header text-uppercase">Hecho (1)</h5>
+                                                                                    <div id="task-list-four" class="task-list-items">
+
+                                                                                        <!-- Task Item -->
+                                                                                        <div class="card mb-0">
+                                                                                            <div class="card-body p-3">
+                                                                                                <small class="float-end text-muted">16 Jul 2018</small>
+                                                                                                <span class="badge bg-success">Terminado</span>
+
+                                                                                                <h5 class="mt-2 mb-2">
+                                                                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#task-detail-modal" class="text-body">Nombre de la Tarea 10</a>
+                                                                                                </h5>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <span class="pe-2 text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-briefcase-outline text-muted"></i>
+                                                                                                        Hyper
+                                                                                                    </span>
+                                                                                                    <span class="text-nowrap mb-2 d-inline-block">
+                                                                                                        <i class="mdi mdi-comment-multiple-outline text-muted"></i>
+                                                                                                        <b>287</b> Commentarios
+                                                                                                    </span>
+                                                                                                </p>
+
+                                                                                                <div class="dropdown float-end">
+                                                                                                    <a href="#" class="dropdown-toggle text-muted arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                        <i class="mdi mdi-dots-vertical font-18"></i>
+                                                                                                    </a>
+                                                                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Editar</a>
+                                                                                                        <!-- item-->
+                                                                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Eliminar</a>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <p class="mb-0">
+                                                                                                    <img src="assets/images/users/avatar-10.jpg" alt="user-img" class="avatar-xs rounded-circle me-1">
+                                                                                                    <span class="align-middle">Harvey Dickinson</span>
+                                                                                                </p>
+                                                                                            </div> <!-- end card-body -->
+                                                                                        </div>
+                                                                                        <!-- Task Item End -->
+                                                                                        
+                                                                                    </div> <!-- end company-list-4-->
+                                                                                </div>
+
+                                                                            </div> <!-- end .board-->
+                                                                        </div> <!-- end col -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- fase5-->
+                                            <div class="tab-pane show" id="fase5">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="card">
+                                                            <div class="card-body">
+                                                                <div class="page-aside-left">
+                                                                    <div class="email-menu-list mt-3">
+                                                                        <a href="#" class="list-group-item border-0"><i class="mdi mdi-file-document font-18 align-middle me-2"></i>Adjuntar Archivos</a>
+                                                                        <a href="#" class="list-group-item border-0"><i class="mdi mdi-delete font-18 align-middle me-2"></i>Eliminar Archivos</a>
+                                                                        <a href="#" class="list-group-item border-0"><i class="mdi mdi-clock-outline font-18 align-middle me-2"></i>Recientes</a>
+                                                                        <a href="#" class="list-group-item border-0"><i class="mdi mdi-star-outline font-18 align-middle me-2"></i>Favoritos</a>
+                                                                        <a href="listarTareasfase5.html" class="list-group-item border-0"><i class="mdi mdi-clipboard-list-outline font-18 align-middle me-2"></i>Listar Tareas</a>
                                                                     </div>
                                                                 </div>
                                                                 <div class="page-aside-right">
@@ -754,7 +1224,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">listagaps.pdf</a>
+                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">PlanSoporte.pdf</a>
                                                                                                 <p class="mb-0 font-13">7.5 MB</p>
                                                                                             </div>
                                                                                             <div class="col ps-0">
@@ -777,7 +1247,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">Workbook.pdf</a>
+                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">MatrizRACI.pdf</a>
                                                                                                 <p class="mb-0 font-13">7.5 MB</p>
                                                                                             </div>
                                                                                             <div class="col ps-0">
@@ -800,7 +1270,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">Integraciones.pdf</a>
+                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">PlanDifusion.pdf</a>
                                                                                                 <p class="mb-0 font-13">784 KB</p>
                                                                                             </div>
                                                                                             <div class="col ps-0">
@@ -823,7 +1293,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">MetoDesa.pdf</a>
+                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">Logincidecias.pdf</a>
                                                                                                 <p class="mb-0 font-13">784 KB</p>
                                                                                             </div>
                                                                                             <div class="col ps-0">
@@ -846,7 +1316,30 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">AproFase.pdf</a>
+                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">Dashboard.pdf</a>
+                                                                                                <p class="mb-0 font-13">784 KB</p>
+                                                                                            </div>
+                                                                                            <div class="col ps-0">
+                                                                                                <i class="mdi mdi-delete-circle-outline font-16"></i>
+                                                                                                <i class="mdi mdi-cloud-download-outline font-16"></i>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xxl-4 col-lg-6">
+                                                                                <div class="card m-1 shadow-none border">
+                                                                                    <div class="p-2">
+                                                                                        <div class="row align-items-center">
+                                                                                            <div class="col-auto">
+                                                                                                <div class="avatar-sm">
+                                                                                                    <span class="avatar-title bg-light text-secondary rounded">
+                                                                                                        <i class="mdi mdi-file-pdf-outline font-18"></i>
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col ps-0">
+                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">ActaCierre.pdf</a>
                                                                                                 <p class="mb-0 font-13">784 KB</p>
                                                                                             </div>
                                                                                             <div class="col ps-0">
@@ -891,25 +1384,18 @@
         <!-- bundle -->
         <script src="assets/js/vendor.min.js"></script>
         <script src="assets/js/app.min.js"></script>
-
-        <!-- third party:js -->
-        <script src="assets/js/vendor/apexcharts.min.js"></script>
-        <!-- third party end -->
-
-        <!-- Chat js -->
-        <script src="assets/js/ui/component.chat.js"></script>
-
-        <!-- Todo js -->
-        <script src="assets/js/ui/component.todo.js"></script>
-
-        <!-- demo:js -->
-        <script src="assets/js/pages/demo.widgets.js"></script>
-
+        
         <!-- Dropzone js -->
         <script src="assets/js/vendor/dropzone.min.js"></script>
 
         <!-- File upload js -->
         <script src="assets/js/ui/component.fileupload.js"></script>
+
+         <!-- dragula js-->
+        <script src="assets/js/vendor/dragula.min.js"></script>
+
+        <!-- demo js -->
+        <script src="assets/js/ui/component.dragula.js"></script>
         
     </body>
 </html>
