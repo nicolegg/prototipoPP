@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>People Planner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+        <meta content="Coderthemes" name="author">
+        <link rel="shortcut icon" href="assets/images/logo-sm-peopleplanner.png">
+
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+
+    </head>
+
+    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <div class="wrapper">
+            <div class="leftside-menu">
+    
+                <!-- LOGO -->
+                <a href="index.html" class="logo text-center logo-light">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-peopleplanner.png" alt="">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm-peopleplanner.png" alt="" height="24">
+                    </span>
+                </a>
+
+                <!-- LOGO -->
+                <a href="index.html" class="logo text-center logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-peopleplanner-dark.png" alt="" height="16">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-peopleplanner.png" alt="" height="16">
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar="">
+
+                    <!--- inicio menú -->
+                    <ul class="side-nav">
+                        <li class="side-nav-item">
+                            <a href="apps-calendar.html" class="side-nav-link">
+                                <i class="uil-calender"></i>
+                                <span> opción 1 </span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="apps-chat.html" class="side-nav-link">
+                                <i class="uil-comments-alt"></i>
+                                <span> opción 2 </span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="index.html" class="side-nav-link">
+                                <i class="uil-document-layout-center"></i>
+                                <span>Proyectos </span>
+                            </a>
+                        </li>
+                    </ul>
+                     <!--- fin menú -->
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="content-page">
+                <div class="content">
+                    <div class="navbar-custom">
+                        <ul class="list-unstyled topbar-menu float-end mb-0">
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <span class="account-user-avatar"> 
+                                        <img src="assets/images/users/45_JORGEHUMBERTOORIHUELAROALCABA.jpg" alt="user-image" class="rounded-circle">
+                                    </span>
+                                    <span>
+                                        <span class="account-user-name">Jorge Orihuela</span>
+                                        <span class="account-position">Gestor</span>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-logout me-1"></i>
+                                        <span>Cerrar Sesión</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </div>
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">Gestión de Proyectos</h4>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        <div class="row">
+                            <div class="col-xxl-6 col-lg-6">
+                                <a href="proyectoSAP.html">
+                                    <div class="card widget-flat">
+                                        <div class="card-body">
+                                            <div class="float-end">
+                                                <button type="button" class="btn btn-sm btn-light">Empezar</button>
+                                            </div>
+                                            <h2 class="text-muted text-uppercase mt-0 text-center" title="Revenue">Proyecto con SAP</h2>
+                                            <div id="spark2" class="apex-charts mb-3" data-colors="#34bfa3"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xxl-6 col-lg-6">
+                                <a href="proyectoGeneral.html">
+                                    <div class="card widget-flat">
+                                        <div class="card-body">
+                                            <div class="float-end">
+                                                <button type="button" class="btn btn-sm btn-light">Empezar</button>
+                                            </div>
+                                            <h2 class="text-muted text-uppercase mt-0 text-center" title="Revenue">Proyectos Generales</h2>
+                                            <div id="spark4" class="apex-charts mb-3" data-colors="#3095B2"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <script>document.write(new Date().getFullYear())</script> © SEIDOR - HCC
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- third party:js -->
+        <script src="assets/js/vendor/apexcharts.min.js"></script>
+        <!-- third party end -->
+
+        <!-- Chat js -->
+        <script src="assets/js/ui/component.chat.js"></script>
+
+        <!-- Todo js -->
+        <script src="assets/js/ui/component.todo.js"></script>
+
+        <!-- demo:js -->
+        <script src="assets/js/pages/demo.widgets.js"></script>
+        
+    </body>
+</html>

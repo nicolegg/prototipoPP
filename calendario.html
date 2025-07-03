@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>People Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+  <meta content="Coderthemes" name="author">
+  <link rel="shortcut icon" href="assets/images/logo-sm-peopleplanner.png">
+
+  <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+  <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+
+</head>
+
+<body class="loading"
+  data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+  <div class="wrapper">
+    <div class="leftside-menu">
+      <!-- LOGO -->
+      <a href="index.html" class="logo text-center logo-light">
+        <span class="logo-lg">
+          <img src="assets/images/logo-peopleplanner.png" alt="">
+        </span>
+        <span class="logo-sm">
+          <img src="assets/images/logo-sm-peopleplanner.png" alt="" height="24">
+        </span>
+      </a>
+
+      <!-- LOGO -->
+      <a href="index.html" class="logo text-center logo-dark">
+        <span class="logo-lg">
+          <img src="assets/images/logo-peopleplanner-dark.png" alt="" height="16">
+        </span>
+        <span class="logo-sm">
+          <img src="assets/images/logo-peopleplanner.png" alt="" height="16">
+        </span>
+      </a>
+
+      <div class="h-100" id="leftside-menu-container" data-simplebar="">
+        <!--- inicio menú -->
+        <ul class="side-nav">
+          <li class="side-nav-item">
+            <a href="index.html" class="side-nav-link">
+              <i class="uil-home-alt"></i>
+              <span> inicio </span>
+            </a>
+          </li>
+          <li class="side-nav-item">
+            <a href="proyectoSAP.html" class="side-nav-link">
+              <i class="uil-folder-plus"></i>
+              <span> Mis Tareas </span>
+            </a>
+          </li>
+          <li class="side-nav-item">
+            <a href="calendario.html" class="side-nav-link">
+              <i class="uil-folder-plus"></i>
+              <span> Asignación de Tareas </span>
+            </a>
+          </li>
+        </ul>
+        <!--- fin menú -->
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="content-page">
+      <div class="content">
+        <div class="navbar-custom">
+          <ul class="list-unstyled topbar-menu float-end mb-0">
+            <li class="dropdown notification-list">
+              <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#"
+                role="button" aria-haspopup="false" aria-expanded="false">
+                <span class="account-user-avatar">
+                  <img src="assets/images/users/45_JORGEHUMBERTOORIHUELAROALCABA.jpg" alt="user-image"
+                    class="rounded-circle">
+                </span>
+                <span>
+                  <span class="account-user-name">Jorge Orihuela</span>
+                  <span class="account-position">Gestor</span>
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                  <i class="mdi mdi-logout me-1"></i>
+                  <span>Cerrar Sesión</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <button class="button-menu-mobile open-left">
+            <i class="mdi mdi-menu"></i>
+          </button>
+        </div>
+
+        <!-- Start Content-->
+        <div class="container-fluid">
+
+          <!-- start page title -->
+          <div class="row">
+            <div class="col-12">
+              <div class="page-title-box">
+                <h4 class="page-title">Asignación de Tareas</h4>
+              </div>
+            </div>
+          </div>
+          <!-- end page title -->
+
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label for="simpleinput" class="form-label">Buscar</label>
+                      <input type="text" id="simpleinput" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="example-select" class="form-label">Lider</label> <span
+                        style="color: red;">(*)</span>
+                      <select class="form-select" id="example-select">
+                        <option>TODOS</option>
+                        <option>LIDER 2</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="example-select" class="form-label">Tareas asignadas por</label> <span
+                        style="color: red;">(*)</span>
+                      <select class="form-select" id="example-select">
+                        <option>TODOS</option>
+                        <option>LIDER 2</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="example-select" class="form-label">Opciones del calendario</label> <span
+                        style="color: red;">(*)</span>
+                      <select class="form-select" id="example-select">
+                        <option>1 SEMANA</option>
+                        <option>1 MES</option>
+                      </select>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="tab-content">
+                    <div class="tab-pane show active" id="bordered-table-preview">
+                      <div class="table-responsive-sm">
+                        <table class="table table-bordered table-centered mb-0">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th style="color: #1A396C;">Lun 30</th>
+                              <th style="color: #1A396C;">Mar 01</th>
+                              <th style="color: #1A396C;">Mie 02</th>
+                              <th style="color: #1A396C;">Jue 03</th>
+                              <th style="color: #1A396C;">Vie 04</th>
+                              <th style="color: #1A396C;">Sab 05</th>
+                              <th style="color: #1A396C;">Dom 06</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row" style="color: #1A396C;"> <b>ESTEFANNY NICOLE</b></td>
+                              <td colspan="5" class="table-active" style="background-color: #D7CEDE; color: black;">PROYECTO DE IMPLEMENTACIÓN DE PEOPLE PLANNER
+                                <button type="button" class="btn btn-primary" style="background-color: #707393;" data-bs-toggle="modal" data-bs-target="#full-width-modal">REVISIÓN DE PROTOTIPO </button><br><br>
+                              </td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" style="background-color: #F1F2F4; color: #1A396C;"><b>AARON RA.</b></td>
+                              <td style="background-color: #F1F2F4;">
+                                <button type="button" class="btn btn-primary" style="background-color: #D7CEDE; color: black;">Proyecto PP <br> tarea Y </button><br><br>
+                                <button type="button" class="btn btn-primary" style="background-color: #FBE1FF; color: black;">Proyecto PP <br> tarea Y </button><br><br>
+                              </td>
+                              <td colspan="3" class="table-active" style="background-color: white;">
+                                <button type="button" class="btn btn-primary" style="background-color: #B8EFE2; color: black;">Segunda tarea del Proyecto People Planner <br> tarea Y </button><br><br>
+                              </td>
+                              <td style="background-color: #F1F2F4;"></td>
+                              <td style="background-color: #F1F2F4;"></td>
+                              <td style="background-color: #F1F2F4;"></td>
+                            </tr>
+                            <tr>
+                              <td scope="row" style="background-color: #F1F2F4;"></td>
+                              <td colspan="3" class="table-active">
+                                <button type="button" class="btn btn-primary" style="background-color: #F8B58A; color: black;">tercera tarea del Proyecto People Planner <br> tarea Z </button><br><br>
+                                <button type="button" class="btn btn-info" style="background-color: #C7E3F2; color: black;">Proyecto PP <br> tarea Z </button><br><br>
+                              </td>
+                              <td style="background-color: #F1F2F4;"></td>
+                              <td style="background-color: #F1F2F4;"></td>
+                              <td style="background-color: #F1F2F4;"></td>
+                              <td style="background-color: #F1F2F4;"></td>
+                            </tr>
+                            <tr>
+                              <td scope="row">ALESSANDRA</td>
+                              <td>
+                                <button type="button" class="btn btn-info" style="background-color: #C1C4C5; color: black;">INC123456 </button>
+                                
+                              </td>
+                              <td></td>
+                              <td></td>
+                              <td><button type="button" class="btn btn-info" style="background-color: #C1C4C5; color: black;">RITM02315</button></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  modal detalle tarea inicio -->
+      <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fullWidthModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="fullWidthModalLabel">Detalle de la tarea </h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-xxl-12 col-xl-7">
+                  <div class="card d-block">
+                    <div class="card-body">
+                      <div class="dropdown card-widgets">
+                                                                                    <div class="d-flex">
+                                                                                        <img src="assets/images/users/avatar-9.jpg" alt="Arya S" class="rounded-circle me-2" height="24" title="Patricia Herrera">
+                                                                                        <img src="assets/images/users/avatar-3.jpg" alt="Arya S" class="rounded-circle me-2" height="24" title="Sebastian Paz">
+                                                                                    </div>
+                      </div>
+                      <div class="form-check float-start">
+                                                                                    <input type="checkbox" class="form-check-input" id="completedCheck">
+                                                                                    <label class="form-check-label" for="completedCheck">
+                                                                                        Marcar como completada
+                                                                                    </label>
+                      </div>
+                                                                                <div class="clearfix"></div>
+                                                                                <h3 class="mt-3">Creación de prototipo 1</h3>
+                                                                                <div class="row">
+                                                                                    <div class="col-3">
+                                                                                        <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Rango de fecha</p>
+                                                                                        <div class="d-flex">
+                                                                                            <input type="text" class="form-control date" id="singledaterange" data-toggle="date-picker" data-cancel-class="btn-warning">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-3">
+                                                                                        <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Duración Estimada</p>
+                                                                                        <div class="d-flex">
+                                                                                            <input type="number" id="simpleinput" class="form-control" value="5">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-3">
+                                                                                        <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Estado</p>
+                                                                                        <div class="d-flex">
+                                                                                            <select class="form-select" id="example-select">
+                                                                                                <option>Pendiente</option>
+                                                                                                <option>En Progreso</option>
+                                                                                                <option selected>Revisar</option>
+                                                                                                <option>Hecho</option>
+                                                                                                <hr>
+                                                                                                <option>configuración</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-3">
+                                                                                        <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Prioridad</p>
+                                                                                        <div class="d-flex">
+                                                                                            <select class="form-select" id="example-select">
+                                                                                                <option>Baja</option>
+                                                                                                <option selected>media</option>
+                                                                                                <option>alta</option>
+                                                                                                <option>Urgente</option>
+                                                                                                <hr>
+                                                                                                <option>configuración</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <h5 class="mt-3">Descripción de la tarea:</h5>
+                                                                                <p class="text-muted mb-4">
+                                                                                    Aquí se podrá descripbir la tarea pero será un campo opcional si es que se quiere dar más detalle
+                                                                                </p>
+                                                                                <h5 class="mt-4 mb-2 font-16">Links <button type="button" class="btn btn-sm btn-outline-info px-1 py-0"> <i class='uil uil-file-upload me-1 font-16'></i></button></h5>
+                                                                                <div class="card mb-2 shadow-none border">
+                                                                                    <div class="p-1">
+                                                                                        <div class="row align-items-center">
+                                                                                            <div class="col-auto">
+                                                                                                <div class="avatar-sm">
+                                                                                                    <span class="avatar-title rounded">
+                                                                                                        .ZIP
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col ps-0">
+                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">plantilla.zip</a>
+                                                                                                <p class="mb-0">2.3 MB</p>
+                                                                                            </div>
+                                                                                            <div class="col-auto" id="tooltip-container9">
+                                                                                                <a href="javascript:void(0);" data-bs-container="#tooltip-container9" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Eliminar" class="btn btn-link text-danger btn-lg p-0">
+                                                                                                    <i class='uil uil-multiply'></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="card mb-2 shadow-none border">
+                                                                                    <div class="p-1">
+                                                                                        <div class="row align-items-center">
+                                                                                            <div class="col-auto">
+                                                                                                <img src="assets/images/projects/project-1.jpg" class="avatar-sm rounded" alt="file-image">
+                                                                                            </div>
+                                                                                            <div class="col ps-0">
+                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">iteración1.docx</a>
+                                                                                                <p class="mb-0">1.25 MB</p>
+                                                                                            </div>
+                                                                                            <div class="col-auto" id="tooltip-container10">
+                                                                                                <a href="javascript:void(0);" data-bs-container="#tooltip-container10" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Eliminar" class="btn btn-link text-danger btn-lg p-0">
+                                                                                                    <i class='uil uil-multiply'></i>
+                                                                                                </a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                    </div> 
+                  </div>
+                </div>                                          
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-info">Guardar cambios</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  modal detalle tarea fin -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <script>document.write(new Date().getFullYear())</script> © SEIDOR - HCC
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <!-- bundle -->
+  <script src="assets/js/vendor.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
+
+</body>
+
+</html>

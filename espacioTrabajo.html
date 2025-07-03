@@ -43,22 +43,102 @@
                     <!--- inicio menú -->
                     <ul class="side-nav">
                         <li class="side-nav-item">
-                            <a href="apps-calendar.html" class="side-nav-link">
-                                <i class="uil-calender"></i>
-                                <span> opción 1 </span>
-                            </a>
-                        </li>
-                        <li class="side-nav-item">
-                            <a href="apps-chat.html" class="side-nav-link">
-                                <i class="uil-comments-alt"></i>
-                                <span> opción 2 </span>
-                            </a>
-                        </li>
-                        <li class="side-nav-item">
                             <a href="index.html" class="side-nav-link">
-                                <i class="uil-document-layout-center"></i>
-                                <span>Proyectos </span>
+                                <i class="uil-home-alt"></i>
+                                <span> inicio </span>
                             </a>
+                        </li>
+                        <hr>
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarMultiLevel" aria-expanded="false" aria-controls="sidebarMultiLevel" class="side-nav-link">
+                                <i class="uil-folder-plus"></i>
+                                <span> Espacios de Trabajo </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarMultiLevel">
+                                <ul class="side-nav-second-level">
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarSecondLevel" aria-expanded="false" aria-controls="sidebarSecondLevel">
+                                            <span> Espacio de Trabajo #1 </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarSecondLevel">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="documento.html">Proyecto 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Proyecto 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarThirdLevel" aria-expanded="false" aria-controls="sidebarThirdLevel">
+                                            <span> Espacio de Trabajo #2 </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarThirdLevel">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="javascript: void(0);">Proyecto 3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript: void(0);">Proyecto 4</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp3" aria-expanded="false" aria-controls="esp3">
+                                            <span> Espacio de Trabajo #3 </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp3">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="javascript: void(0);">Proyecto 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript: void(0);">Proyecto 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp4" aria-expanded="false" aria-controls="esp4">
+                                            <span> Espacio de Trabajo #4 </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp4">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="javascript: void(0);">Proyecto 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript: void(0);">Proyecto 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp5" aria-expanded="false" aria-controls="esp5">
+                                            <span> Espacio de Trabajo #5 </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp5">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="javascript: void(0);">Proyecto 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript: void(0);">Proyecto 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                      <!--- fin menú -->
@@ -117,7 +197,7 @@
                                                     <div class="col-auto">
                                                         <div class="avatar-lg">
                                                             <span class="avatar-title bg-warning text-dark font-22 rounded-circle">
-                                                                JO
+                                                                <input class="avatar-title rounded-circle" id="example-color" type="color" name="color" value="#727cf5"> 
                                                             </span>
                                                         </div>
                                                     </div>
@@ -153,7 +233,7 @@
                                             <div class="card-body">
                                                 <i class="dripicons-basket float-end text-muted"></i>
                                                 <h6 class="text-muted text-uppercase mt-0">Proyecto #1</h6>
-                                                <h2 class="m-b-20">Aenza</h2>
+                                                <a href="documento.html"><h2 class="m-b-20">Aenza</h2></a>
                                                 <span class="badge bg-warning"> en progreso </span> <span class="text-muted">2025 - 2026</span>
                                             </div>
                                         </div>
@@ -176,39 +256,235 @@
 
                 <!-- MODAL DE CREACIÓN DE PROYECTO -->
                  <div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-dialog modal-full-width">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title" id="myCenterModalLabel" style="color: black;"><b>Nuevo Proyecto</b></h4>
+                                <h4 class="modal-title" id="myCenterModalLabel" style="color: black;"><b>Crear nuevo Proyecto</b></h4>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
                             </div>
                             <div class="modal-body">
                                 <form class="needs-validation" novalidate="">
-                                    <div class="mb-3">
-                                        <label class="form-label" for="validationCustom01">Nombre del Proyecto</label>
-                                        <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre del Proyecto" value="Sistema de Ventas " required="">
-                                        <div class="valid-feedback">registro correcto!</div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom01">Nombre del Proyecto </label> <span style="color: red;">(*)</span>
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre del Proyecto" value="Sistema de Ventas " required="">
+                                            <div class="valid-feedback">registro correcto!</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="simpleinput" class="form-label">Elegir algún Cliente </label> <span style="color: red;">(*)</span>
+                                            <select class="form-select mb-3">
+                                                <option selected>Elegir un Cliente</option>
+                                                <option value="1">Claro</option>
+                                                <option value="2">Aenza</option>
+                                                <option value="3">Antamina</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label" for="validationCustom02">Descripción del Proyecto</label>
+                                        <label class="form-label" for="validationCustom02">Descripción del Proyecto </label> <span style="color: red;">(*)</span>
                                         <input type="text" class="form-control" id="validationCustom02" placeholder="Descripción del Proyecto" value="" required="">
                                         <div class="invalid-feedback">registro incorrecto!</div>
                                     </div>
-                                    <label for="simpleinput" class="form-label">Elegir algún Cliente</label>
-                                    <select class="form-select mb-3">
-                                        <option selected>Elegir un Cliente</option>
-                                        <option value="1">Claro</option>
-                                        <option value="2">Aenza</option>
-                                        <option value="3">Antamina</option>
-                                    </select>
-                                    <label for="simpleinput" class="form-label">Compartir espacio de Trabajo con alguna empresa</label>
-                                    <select class="form-select mb-3">
-                                        <option selected>Elegir una empresa</option>
-                                        <option value="1">Hcc</option>
-                                        <option value="2">Consulting</option>
-                                        <option value="3">Technologies</option>
-                                    </select>
-                                    <button class="btn btn-info" type="submit"><a href="proyectofase1.html" style="color: white;">Crear Proyecto</a></button>
+                                    
+                                    <hr>
+                                    <label for="simpleinput" class="form-label" style="color: black;"><b>COMPARTIR PROYECTO</b></label>
+                                        <div class="row">
+                                                    <div class="col-md-3">
+                                                        <select class="form-select mb-3 ">
+                                                            <option selected>Elegir un País</option>
+                                                            <option value="1">Perú</option>
+                                                            <option value="2">Chile</option>
+                                                            <option value="3">Colombia</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <select class="form-select mb-3 ">
+                                                            <option selected>Elegir una Empresa</option>
+                                                            <option value="1">Hcc</option>
+                                                            <option value="2">Consulting</option>
+                                                            <option value="3">Technologies</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <select class="form-select mb-3 ">
+                                                            <option selected>Elegir una Organización</option>
+                                                            <option value="1">Innovación</option>
+                                                            <option value="2">Soporte</option>
+                                                            <option value="3">HCM</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <select class="form-select mb-3 ">
+                                                            <option selected>Elegir una Área</option>
+                                                            <option value="1">Innovación</option>
+                                                            <option value="2">Soporte</option>
+                                                            <option value="3">HCM</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <form>
+                                                            <div class="row gy-2 gx-2 align-items-center">
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <input type="checkbox" class="form-check-input" id="autoSizingCheck">
+                                                                        <label class="form-check-label" for="autoSizingCheck">Seleccionar todos</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <label class="form-check-label" for="autoSizingCheck">Perfil</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <label class="form-check-label" for="autoSizingCheck">País</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <label class="form-check-label" for="autoSizingCheck">Empresa</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <div class="form-check mb-2">
+                                                                        <label class="form-check-label" for="autoSizingCheck">Organización</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <div class="form-check mb-2">
+                                                                        <label class="form-check-label" for="autoSizingCheck">Área</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <label class="form-check-label" for="autoSizingCheck">Permisos</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <input type="checkbox" class="form-check-input" id="autoSizingCheck">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Nicole García</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Web Developer</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Perú</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Seidor</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">HCC</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Innovación</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <select class="form-select" id="example-select">
+                                                                            <option>Administrador</option>
+                                                                            <option>Puede Editar</option>
+                                                                            <option>Solo puede visualizar</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <input type="checkbox" class="form-check-input" id="autoSizingCheck">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Pieron Calienes</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Consultor Técnico</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Brasil</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Seidor</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">HCC</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">HCM</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <select class="form-select" id="example-select">
+                                                                            <option>Administrador</option>
+                                                                            <option selected>Puede Editar</option>
+                                                                            <option>Solo puede visualizar</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <input type="checkbox" class="form-check-input" id="autoSizingCheck">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Alessandra Nuñez</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Consultor Técnico</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Argentina</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Seidor</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Consulting</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1">
+                                                                    <div class="form-check mb-2">
+                                                                        <h6 class="form-check-label" for="autoSizingCheck">Soporte</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                    <div class="form-check mb-2">
+                                                                        <select class="form-select" id="example-select">
+                                                                            <option>Administrador</option>
+                                                                            <option>Puede Editar</option>
+                                                                            <option selected>Solo puede visualizar</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                    <button class="btn btn-info" type="submit"><a href="documento.html" style="color: white;">Crear Proyecto</a></button>
                                     <button class="btn btn-light" type="submit">Cancelar</button>
                                 </form>
                             </div>

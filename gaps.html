@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>People Planner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description">
+        <meta content="Coderthemes" name="author">
+        <link rel="shortcut icon" href="assets/images/logo-sm-peopleplanner.png">
+
+        <!-- third party css -->
+        <link href="assets/css/vendor/dataTables.bootstrap5.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/vendor/responsive.bootstrap5.css" rel="stylesheet" type="text/css">
+        <!-- third party css end -->
+
+        <!-- App css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+        <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+
+    </head>
+
+    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <div class="wrapper">
+            <div class="leftside-menu">
+    
+                <!-- LOGO -->
+                <a href="index.html" class="logo text-center logo-light">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-peopleplanner.png" alt="">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm-peopleplanner.png" alt="" height="24">
+                    </span>
+                </a>
+
+                <!-- LOGO -->
+                <a href="index.html" class="logo text-center logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-peopleplanner-dark.png" alt="" height="16">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-peopleplanner.png" alt="" height="16">
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar="">
+                    <!--- inicio menú -->
+                    <ul class="side-nav">
+                        <li class="side-nav-item">
+                            <a href="index.html" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span> inicio </span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="proyectoSAP.html" class="side-nav-link">
+                                <i class="uil-folder-plus"></i>
+                                <span> Espacios de Trabajo </span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="side-nav-title side-nav-item">Espacio de trabajo #1</li>
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarMultiLevel" aria-expanded="false" aria-controls="sidebarMultiLevel" class="side-nav-link">
+                                <i class="uil-folder-plus"></i>
+                                <span> Proyecto nuevo </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarMultiLevel">
+                                <ul class="side-nav-second-level">
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarSecondLevel" aria-expanded="false" aria-controls="sidebarSecondLevel">
+                                            <span> Fase 1 - DESCUBIR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarSecondLevel">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="documento.html">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarThirdLevel" aria-expanded="false" aria-controls="sidebarThirdLevel">
+                                            <span> Fase 2 - PREPARAR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarThirdLevel">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="equipo.html">🛠 Equipo</a>
+                                                </li>
+                                                <li>
+                                                    <a href="equipoCliente.html">🛠 Equipo Cliente</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp3" aria-expanded="false" aria-controls="esp3">
+                                            <span> Fase 3 - EXPLORAR</span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp3">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="gaps.html">📌 GAPS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp4" aria-expanded="false" aria-controls="esp4">
+                                            <span> Fase 4 - REALIZAR</span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp4">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="tarea.html">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="sprints.html">🔁 Sprints</a>
+                                                </li>
+                                                <li>
+                                                    <a href="incidencias.html">🛠 Incidencias Técnicas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp5" aria-expanded="false" aria-controls="esp5">
+                                            <span> Fase 5 - DESPLEGAR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp5">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Incidencias Técnicas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp6" aria-expanded="false" aria-controls="esp6">
+                                            <span> Fase 6 - EJECUTAR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp6">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Incidencias Técnicas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📌 GAPS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarMultiLevel1" aria-expanded="false" aria-controls="sidebarMultiLevel1" class="side-nav-link">
+                                <i class="uil-folder-plus"></i>
+                                <span> Proyecto 2 </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarMultiLevel1">
+                                <ul class="side-nav-second-level">
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarSecondLevel1" aria-expanded="false" aria-controls="sidebarSecondLevel1">
+                                            <span> Fase 1 - DESCUBIR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarSecondLevel1">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarThirdLevel1" aria-expanded="false" aria-controls="sidebarThirdLevel1">
+                                            <span> Fase 2 - PREPARAR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarThirdLevel1">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Equipo</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Equipo Cliente</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp32" aria-expanded="false" aria-controls="esp32">
+                                            <span> Fase 3 - EXPLORAR</span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp32">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📌 GAPS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp42" aria-expanded="false" aria-controls="esp42">
+                                            <span> Fase 4 - REALIZAR</span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp42">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🔁 Sprints</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Incidencias Técnicas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp52" aria-expanded="false" aria-controls="esp52">
+                                            <span> Fase 5 - DESPLEGAR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp52">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Incidencias Técnicas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp62" aria-expanded="false" aria-controls="esp62">
+                                            <span> Fase 6 - EJECUTAR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp62">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Incidencias Técnicas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📌 GAPS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarMultiLevel13" aria-expanded="false" aria-controls="sidebarMultiLevel13" class="side-nav-link">
+                                <i class="uil-folder-plus"></i>
+                                <span> Proyecto 3 </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="sidebarMultiLevel13">
+                                <ul class="side-nav-second-level">
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarSecondLevel1" aria-expanded="false" aria-controls="sidebarSecondLevel1">
+                                            <span> Fase 1 - DESCUBIR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarSecondLevel1">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#sidebarThirdLevel1" aria-expanded="false" aria-controls="sidebarThirdLevel1">
+                                            <span> Fase 2 - PREPARAR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="sidebarThirdLevel1">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Equipo</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Equipo Cliente</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp32" aria-expanded="false" aria-controls="esp32">
+                                            <span> Fase 3 - EXPLORAR</span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp32">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📌 GAPS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp42" aria-expanded="false" aria-controls="esp42">
+                                            <span> Fase 4 - REALIZAR</span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp42">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🔁 Sprints</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Incidencias Técnicas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp52" aria-expanded="false" aria-controls="esp52">
+                                            <span> Fase 5 - DESPLEGAR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp52">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Incidencias Técnicas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="side-nav-item">
+                                        <a data-bs-toggle="collapse" href="#esp62" aria-expanded="false" aria-controls="esp62">
+                                            <span> Fase 6 - EJECUTAR </span>
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <div class="collapse" id="esp62">
+                                            <ul class="side-nav-third-level">
+                                                <li>
+                                                    <a href="#">📋Documentos</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📝 Tareas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">🛠 Incidencias Técnicas</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">📌 GAPS</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                     <!--- fin menú -->
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="content-page">
+                <div class="content">
+                   <!--  inicio de usuario -->
+                    <div class="navbar-custom">
+                        <ul class="list-unstyled topbar-menu float-end mb-0">
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <span class="account-user-avatar"> 
+                                        <img src="assets/images/users/45_JORGEHUMBERTOORIHUELAROALCABA.jpg" alt="user-image" class="rounded-circle">
+                                    </span>
+                                    <span>
+                                        <span class="account-user-name">Jorge Orihuela</span>
+                                        <span class="account-position">Gestor</span>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-logout me-1"></i>
+                                        <span>Cerrar Sesión</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </div>
+                    <!-- fin de usuario -->
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">Lista de GAPS</h4>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title --> 
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row mb-2">
+                                            <div class="col-sm-4">
+                                                <a href="javascript:void(0);" class="btn btn-info mb-2" data-bs-toggle="modal" data-bs-target="#standard-modal"><i class="mdi mdi-plus-circle me-2"></i> Agregar GAPS</a>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="text-sm-end">
+                                                    <!-- <button type="button" class="btn btn-success mb-2 me-1"><i class="mdi mdi-cog-outline"></i></button> -->
+                                                    <button type="button" class="btn btn-light mb-2 me-1">Importar</button>
+                                                    <button type="button" class="btn btn-light mb-2">Exportar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="table-responsive">
+                                            <table class="table table-centered w-100 dt-responsive nowrap" id="products-datatable">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th class="all" style="width: 20px;">
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="customCheck1">
+                                                                <label class="form-check-label" for="customCheck1">&nbsp;</label>
+                                                            </div>
+                                                        </th>
+                                                        <th class="all">Gap</th>
+                                                        <th>Procesos/Modulos</th>
+                                                        <th>Prioridad</th>
+                                                        <th>Duración</th>
+                                                        <th>Estado</th>
+                                                        <th style="width: 85px;">Acción</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="customCheck13">
+                                                                <label class="form-check-label" for="customCheck13">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0 d-inline-block align-middle font-16">
+                                                                <a href="apps-ecommerce-products-details.html" class="text-body">Gaps 1</a>
+                                                            </p>
+                                                        </td>
+                                                        <td>sprint 1 / CU</td>
+                                                        <td>
+                                                            <span class="badge bg-warning">Medio</span>
+                                                        </td>
+                                                        <td>
+                                                            5
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge bg-success">Abierto</span>
+                                                        </td>
+                    
+                                                        <td class="table-action">
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="customCheck13">
+                                                                <label class="form-check-label" for="customCheck13">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0 d-inline-block align-middle font-16">
+                                                                <a href="apps-ecommerce-products-details.html" class="text-body">Gaps 2</a>
+                                                            </p>
+                                                        </td>
+                                                        <td>sprint 2 / CU</td>
+                                                        <td>
+                                                            <span class="badge bg-danger">Urgente</span>
+                                                        </td>
+                                                        <td>
+                                                            4
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge bg-info">Asignado</span>
+                                                        </td>
+                    
+                                                        <td class="table-action">
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="customCheck13">
+                                                                <label class="form-check-label" for="customCheck13">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0 d-inline-block align-middle font-16">
+                                                                <a href="apps-ecommerce-products-details.html" class="text-body">Gaps 3</a>
+                                                            </p>
+                                                        </td>
+                                                        <td>sprint 3 / CU</td>
+                                                        <td>
+                                                            <span class="badge bg-info">Bajo</span>
+                                                        </td>
+                                                        <td>
+                                                            6
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge bg-warning">En Proceso</span>
+                                                        </td>
+                    
+                                                        <td class="table-action">
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="customCheck13">
+                                                                <label class="form-check-label" for="customCheck13">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0 d-inline-block align-middle font-16">
+                                                                <a href="apps-ecommerce-products-details.html" class="text-body">Gaps 4</a>
+                                                            </p>
+                                                        </td>
+                                                        <td>sprint 4 / CU</td>
+                                                        <td>
+                                                            <span class="badge bg-warning">Medio</span>
+                                                        </td>
+                                                        <td>
+                                                            4
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge bg-danger">Cancelado</span>
+                                                        </td>
+                    
+                                                        <td class="table-action">
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="customCheck13">
+                                                                <label class="form-check-label" for="customCheck13">&nbsp;</label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0 d-inline-block align-middle font-16">
+                                                                <a href="apps-ecommerce-products-details.html" class="text-body">Gaps 5</a>
+                                                            </p>
+                                                        </td>
+                                                        <td>sprint 5 / CU</td>
+                                                        <td>
+                                                            <span class="badge bg-primary">Alto</span>
+                                                        </td>
+                                                        <td>
+                                                            4
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge bg-dark">Observación</span>
+                                                        </td>
+                    
+                                                        <td class="table-action">
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+                                                            <a href="javascript:void(0);" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
+                        </div>
+                        <!-- end row -->        
+                        
+                    </div>
+                    <!-- inicio modal cambiar gap-->
+                    <div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myCenterModalLabel">Lista de bloque de tareas ...</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6 class="font-15 mt-1">Mover a ....</h6>
+                                        <div class="mt-2">
+                                        <div class="form-check mb-2">
+                                            <input type="radio" id="customRadiocolor1" name="customRadiocolor1" class="form-check-input" checked="">
+                                            <label class="form-check-label" for="customRadiocolor1">Sprint 1/ CU</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input type="radio" id="customRadiocolor1" name="customRadiocolor1" class="form-check-input">
+                                            <label class="form-check-label" for="customRadiocolor1">Sprint 2/ CU</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input type="radio" id="customRadiocolor1" name="customRadiocolor1" class="form-check-input">
+                                            <label class="form-check-label" for="customRadiocolor1">Sprint 3/ CU</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input type="radio" id="customRadiocolor1" name="customRadiocolor1" class="form-check-input">
+                                            <label class="form-check-label" for="customRadiocolor1">Sprint 4/ CU</label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input type="radio" id="customRadiocolor1" name="customRadiocolor1" class="form-check-input">
+                                            <label class="form-check-label" for="customRadiocolor1">Sprint 5/ CU</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-info">Mover gap</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div>
+                     <!-- fin modal cambiar gap --> 
+                   <!--  inicio de modal -->
+                    <div id="standard-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="standard-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="standard-modalLabel">Nuevo Gap</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="simpleinput" class="form-label">Nombre del Gap </label><span style="color: red;">(*)</span>
+                                                <input type="text" id="simpleinput" class="form-control">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="example-email" class="form-label">Procesos/Modulos </label><span style="color: red;">(*)</span>
+                                                <select class="form-select mb-3">
+                                                    <option selected>Sprint 1 / CU</option>
+                                                    <option value="1">Sprint 2 / CU</option>
+                                                    <option value="2">Sprint 3 / CU</option>
+                                                    <option value="3">Sprint 4 / CU</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="example-password" class="form-label">Prioridad </label><span style="color: red;">(*)</span>
+                                                <select class="form-select mb-3">
+                                                    <option selected>Bajo</option>
+                                                    <option value="1">Medio</option>
+                                                    <option value="2">Alto</option>
+                                                    <option value="3">Urgente</option>
+                                                </select> 
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="example-email" class="form-label">Tiempo </label><span style="color: red;">(*)</span>
+                                                <input type="text" id="example-email" name="example-email" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="example-password" class="form-label">Estado </label><span style="color: red;">(*)</span>
+                                                <select class="form-select mb-3">
+                                                    <option selected>Abierto</option>
+                                                    <option value="1">Asignado</option>
+                                                    <option value="2">En Progreso</option>
+                                                    <option value="3">Cancelado</option>
+                                                </select> 
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-info">Agregar gap</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  fin de modal -->
+                </div>
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <script>document.write(new Date().getFullYear())</script> © SEIDOR - HCC
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+        <!-- bundle -->
+        <script src="assets/js/vendor.min.js"></script>
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- third party js -->
+        <script src="assets/js/vendor/jquery.dataTables.min.js"></script>
+        <script src="assets/js/vendor/dataTables.bootstrap5.js"></script>
+        <script src="assets/js/vendor/dataTables.responsive.min.js"></script>
+        <script src="assets/js/vendor/responsive.bootstrap5.min.js"></script>
+        <script src="assets/js/vendor/dataTables.checkboxes.min.js"></script>
+
+        <!-- third party js ends -->
+
+        <!-- demo app -->
+        <script src="assets/js/pages/demo.products.js"></script>
+        <!-- end demo js-->
+        
+    </body>
+</html>

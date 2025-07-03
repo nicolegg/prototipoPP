@@ -1,0 +1,267 @@
+.calendar-toolbar {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.calendar-grid {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+.calendar-header, .calendar-row {
+  display: grid;
+  grid-template-columns: 200px repeat(7, 1fr);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.calendar-header {
+  font-weight: bold;
+  background-color: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+}
+
+.user-cell {
+  padding: 8px 10px;
+  background-color: #f5f7fc;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+.ocupacion {
+  font-size: 13px;
+  color: #555;
+}
+
+.day-cell {
+  text-align: center;
+  padding: 8px;
+  border-left: 1px solid #ccc;
+}
+
+.task-day {
+  padding: 4px;
+  position: relative;
+}
+
+.task-box {
+  background-color: #fff0fb;
+  border: 2px solid #ec4899;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.task-block {
+  margin-top: 4px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+}
+
+.task-block.blue {
+  background-color: #cce5ff;
+  border: 1px solid #2b9af3;
+  color: #0056b3;
+}
+
+.task-block.green {
+  background-color: #b2f5ea;
+  border: 1px solid #319795;
+  color: #004d4d;
+}
+
+.task-block.gray {
+  background-color: #e2e8f0;
+  border: 1px solid #a0aec0;
+  color: #2d3748;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 24px 32px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #1a1a1a;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.hours-summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.modal-button {
+  background-color: #0A1D3C;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #888;
+}
+
+#detalle-tarea-modal .modal-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#detalle-tarea-modal h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+.tareas-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tareas-lista li {
+  margin-bottom: 8px;
+}
+
+.tarea-item {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: default;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tarea-item:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Colores específicos por tipo de tarea */
+.tarea1 {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+  border: 1px solid #d8b4fe;
+}
+
+.tarea2 {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #7dd3fc;
+}
+
+.tarea3 {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.detalle-tarea-content {
+  width: 480px;
+  padding: 28px 36px;
+  border-radius: 12px;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.detalle-id {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detalle-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  font-size: 15px;
+  color: #333;
+}
+
+.detalle-info-grid div {
+  padding: 10px 14px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.detalle-info-grid div:hover {
+  background-color: #eef2f7;
+}
+
+.close-button-tarea {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s ease;
+}
+
+.close-button-tarea:hover {
+  color: #333;
+}
+
+
