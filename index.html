@@ -12,11 +12,6 @@
         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
         <link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
 
-        <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <!-- <link rel="stylesheet" href="assets/css/carousel.css"> -->
-        <link rel="stylesheet" href="assets/css/style.css">
-
     </head>
 
     <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
@@ -41,174 +36,38 @@
                         <img src="assets/images/logo-peopleplanner.png" alt="" height="16">
                     </span>
                 </a>
-
+    
                 <div class="h-100" id="leftside-menu-container" data-simplebar="">
 
-                    <header class="vertical-header">
-                        <div class="vertical-header-wrapper">
-                            <nav class="nav-menu">
-
-                                <div class="margin-block"></div>
-
-                                <ul class="primary-menu">
-                                    <li class="child-menu"><a href="index.html">Inicio</a></li>
-                                    <li class="child-menu"><a href="#">Mis Tareas</a></li>
-                                    <li class="child-menu"><a href="calendario.html">Asignación de Tareas</a></li>
-                                    <li class="child-menu">
-                                        <a data-bs-toggle="collapse" href="#sidebarMultiLevel" aria-expanded="false" aria-controls="sidebarMultiLevel" class="side-nav-link">
-                                            <i class="uil-folder-plus"></i>
-                                            <span> Gestión de Proyectos </span>
-                                            <span class="menu-arrow"></span>
-                                        </a>
-                                        <div class="collapse" id="sidebarMultiLevel">
-                                            <ul class="side-nav-second-level">
-                                                <li class="child-menu">
-                                                    <a data-bs-toggle="collapse" href="#sidebarSecondLevel" aria-expanded="false" aria-controls="sidebarSecondLevel">
-                                                        <span> Proyectos con SAP </span>
-                                                        <span class="menu-arrow"></span>
-                                                    </a>
-                                                    <div class="collapse" id="sidebarSecondLevel">
-                                                        <ul class="side-nav-third-level">
-                                                            <li>
-                                                                <a href="documento.html">Espacio de Trabajo 1</a>
-                                                                <div class="sub-menu-wrapper">
-                                                                    <ul class="sub-menu center-content">
-                                                                        <li class="side-nav-item">
-                                                                            <a data-bs-toggle="collapse" href="#sidebarMultiLevel1" aria-expanded="false" aria-controls="sidebarMultiLevel" class="side-nav-link">
-                                                                            <i class="uil-folder-plus"></i>
-                                                                            <span> Proyecto 1 </span>
-                                                                            <span class="menu-arrow"></span>
-                                                                            </a>
-                                                                        </li>
-                                                                        <li><a href="#">Fase 1 - DESCUBIR <i class="mdi mdi-arrow-right"></i></a> 
-                                                                            <div class="subsub-menu-wrapper">  
-                                                                                <ul class="subsub-menu center-content">
-                                                                                    <li><a href="documento.html">📋Documentos</a></li>
-                                                                                    <li><a href="#">📝 Tareas</a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li><a href="#">Fase 2 - PREPARAR <i class="mdi mdi-arrow-right"></i></a> 
-                                                                            <div class="subsub-menu-wrapper">  
-                                                                                <ul class="subsub-menu center-content">
-                                                                                    <li>
-                                                                                        <a href="#">📋Documentos</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#">📝Tareas</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="equipo.html">🛠 Equipo</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="equipoCliente.html">🛠 Equipo Cliente</a>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li><a href="#">Fase 3 - EXPLORAR <i class="mdi mdi-arrow-right"></i></a> 
-                                                                            <div class="subsub-menu-wrapper">  
-                                                                                <ul class="subsub-menu center-content">
-                                                                                    <li>
-                                                                                        <a href="#">📋Documentos </a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#">📝 Tareas</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="gaps.html">📌 GAPS</a>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li><a href="#">Fase 4 - REALIZAR <i class="mdi mdi-arrow-right"></i></a> 
-                                                                            <div class="subsub-menu-wrapper">  
-                                                                                <ul class="subsub-menu center-content">
-                                                                                    <li>
-                                                                                        <a href="#">📋Documentos</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="tarea.html">📝 Tareas</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="sprints.html">🔁 Sprints</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="incidencias.html">🛠 Incidencias Técnicas</a>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li><a href="#">Fase 5 - DESPLEGAR <i class="mdi mdi-arrow-right"></i></a> 
-                                                                            <div class="subsub-menu-wrapper">  
-                                                                                <ul class="subsub-menu center-content">
-                                                                                    <li>
-                                                                                        <a href="#">📋Documentos</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#">📝 Tareas</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#">🛠 Incidencias Técnicas</a>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li><a href="#">Fase 6 - EJECUTAR <i class="mdi mdi-arrow-right"></i></a> 
-                                                                            <div class="subsub-menu-wrapper">  
-                                                                                <ul class="subsub-menu center-content">
-                                                                                    <li>
-                                                                                        <a href="#">📋Documentos</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#">📝 Tareas</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#">🛠 Incidencias Técnicas</a>
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        <a href="#">📌 GAPS</a>
-                                                                                    </li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <a href="javascript: void(0);">Espacio de Trabajo 2</a>
-                                                            </li>
-                                                            
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="side-nav-item">
-                                                    <a data-bs-toggle="collapse" href="#sidebarThirdLevel" aria-expanded="false" aria-controls="sidebarThirdLevel">
-                                                        <span> Proyectos Generales </span>
-                                                        <span class="menu-arrow"></span>
-                                                    </a>
-                                                    <div class="collapse" id="sidebarThirdLevel">
-                                                        <ul class="side-nav-third-level">
-                                                            <li>
-                                                                <a href="javascript: void(0);">Espacio de Trabajo 3</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="javascript: void(0);">Espacio de Trabajo 4</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                                
-                                <div class="margin-block"></div>
-
-                                <div class="margin-block"></div>
-                            </nav>
-                        </div>
-                    </header>
+                    <!--- inicio menú -->
+                    <ul class="side-nav">
+                        <li class="side-nav-item">
+                            <a href="index.html" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span> inicio </span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="#" class="side-nav-link">
+                                <i class="uil-folder-plus"></i>
+                                <span> Mis Tareas </span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="calendario.html" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span> Asignación de tarea </span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="index.html" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span> Gestión de Proyecto </span>
+                            </a>
+                        </li>
+                    </ul>
+                     <!--- fin menú -->
+                    <div class="clearfix"></div>
                 </div>
             </div>
 
@@ -253,14 +112,14 @@
                             <!-- end page title --> 
 
                             <div class="row">
-                                <div class="col-xxl-6 col-lg-6">
+                                <div class="col-xxl-12 col-lg-12">
                                     <a href="proyectoSAP.html">
                                         <div class="card widget-flat">
                                             <div class="card-body">
                                                 <div class="float-end">
                                                     <button type="button" class="btn btn-sm btn-light">Empezar</button>
                                                 </div>
-                                                <h2 class="text-muted text-uppercase mt-0 text-center" title="Revenue">Proyecto con SAP</h2>
+                                                <h2 class="text-muted text-uppercase mt-0 text-center" title="Revenue">Proyectos</h2>
                                                 <div dir="ltr">
                                                 <div class="donut-container text-center" style="width: 100%;" data-colors2="#727cf5,#0acf97,#6c757d,#fa5c7c,#ffbc00,#39afd1"></div>
                                                 <!-- <div class="legend-chart-container text-center"></div> -->
@@ -269,7 +128,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-xxl-6 col-lg-6">
+                                <!-- <div class="col-xxl-6 col-lg-6">
                                     <a href="proyectoGeneral.html">
                                         <div class="card widget-flat">
                                             <div class="card-body">
@@ -281,7 +140,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

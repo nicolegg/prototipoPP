@@ -43,28 +43,24 @@ document.addEventListener("DOMContentLoaded", () => {
       proyecto: "IT-1",
       resumen: "Error al guardar tarea",
       estado: "Pendiente",
-      comentarios: "1 comentario",
       asignado: "Sebastian Andre Paz",
       vencimiento: "2025-06-12",
       prioridad: "Alta",
-      etiquetas: "bug, urgencia",
       creada: "2025-06-10",
       actualizado: "2025-06-12",
-      informador: "spaz2@seidor.es"
+      informador: "Alessandra Nuñez"
     },
     {
       tipo: "⬆️",
       proyecto: "IT-2",
       resumen: "Botón duplicado",
       estado: "Resuelto",
-      comentarios: "Sin comentarios",
       asignado: "Sebastian Andre Paz",
       vencimiento: "2025-06-10",
       prioridad: "Media",
-      etiquetas: "UI",
       creada: "2025-06-09",
       actualizado: "2025-06-10",
-      informador: "spaz2@seidor.es"
+      informador: "Patricia Herrera"
     }
   ];
 

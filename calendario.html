@@ -102,6 +102,11 @@
           <div class="row">
             <div class="col-12">
               <div class="page-title-box">
+                <div class="page-title-right">
+                  <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="tarea.html">Volver a la vista de Tareas</a></li>
+                  </ol>
+                </div>
                 <h4 class="page-title">Asignación de Tareas</h4>
               </div>
             </div>
@@ -161,21 +166,13 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <td scope="row" style="color: #1A396C;"> <b>ESTEFANNY NICOLE</b></td>
-                              <td colspan="5" class="table-active" style="background-color: #D7CEDE; color: black;">PROYECTO DE IMPLEMENTACIÓN DE PEOPLE PLANNER
-                                <button type="button" class="btn btn-primary" style="background-color: #707393;" data-bs-toggle="modal" data-bs-target="#full-width-modal">REVISIÓN DE PROTOTIPO </button><br><br>
+                              <td scope="row" style="background-color: #F1F2F4; color: #1A396C;"><b>AARON RA. <br>Ocupación: 70%</b></td>
+                              <td colspan="3" class="table-active" data-bs-toggle="modal" data-bs-target="#full-proyecto-modal">
+                                <button type="button" class="btn btn-primary" style="background-color: #D7CEDE; color: black;" title="Cliente:  ANTAMINA , tarea: prototipo ">PROYECTO DE IMPLEMENTACIÓN LMS ANTAMINA FORM BTP</button><br><br>
+                                <button type="button" class="btn btn-primary" style="background-color: #FBE1FF; color: black;">Proyecto People Planner</button><br><br>
                               </td>
-                              <td></td>
-                              <td></td>
-                            </tr>
-                            <tr>
-                              <td scope="row" style="background-color: #F1F2F4; color: #1A396C;"><b>AARON RA.</b></td>
-                              <td style="background-color: #F1F2F4;">
-                                <button type="button" class="btn btn-primary" style="background-color: #D7CEDE; color: black;">Proyecto PP <br> tarea Y </button><br><br>
-                                <button type="button" class="btn btn-primary" style="background-color: #FBE1FF; color: black;">Proyecto PP <br> tarea Y </button><br><br>
-                              </td>
-                              <td colspan="3" class="table-active" style="background-color: white;">
-                                <button type="button" class="btn btn-primary" style="background-color: #B8EFE2; color: black;">Segunda tarea del Proyecto People Planner <br> tarea Y </button><br><br>
+                              <td style="background-color: #F1F2F4; color: #1A396C;">
+                                <button type="button" class="btn btn-primary" style="background-color: #B8EFE2; color: black;"> <br> INC159487 </button><br><br>
                               </td>
                               <td style="background-color: #F1F2F4;"></td>
                               <td style="background-color: #F1F2F4;"></td>
@@ -184,8 +181,7 @@
                             <tr>
                               <td scope="row" style="background-color: #F1F2F4;"></td>
                               <td colspan="3" class="table-active">
-                                <button type="button" class="btn btn-primary" style="background-color: #F8B58A; color: black;">tercera tarea del Proyecto People Planner <br> tarea Z </button><br><br>
-                                <button type="button" class="btn btn-info" style="background-color: #C7E3F2; color: black;">Proyecto PP <br> tarea Z </button><br><br>
+                                <button type="button" class="btn btn-primary" style="background-color: #F8B58A; color: black;">Proyecto de implementación MINSUR </button>
                               </td>
                               <td style="background-color: #F1F2F4;"></td>
                               <td style="background-color: #F1F2F4;"></td>
@@ -193,10 +189,9 @@
                               <td style="background-color: #F1F2F4;"></td>
                             </tr>
                             <tr>
-                              <td scope="row">ALESSANDRA</td>
+                              <td scope="row">ALESSANDRA <br>Ocupación: 50%</td>
                               <td>
                                 <button type="button" class="btn btn-info" style="background-color: #C1C4C5; color: black;">INC123456 </button>
-                                
                               </td>
                               <td></td>
                               <td></td>
@@ -214,12 +209,13 @@
           </div>
         </div>
       </div>
-      <!--  modal detalle tarea inicio -->
-      <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fullWidthModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+
+      <!--  modal ASIGNACIÓN proyecto inicio -->
+      <div id="full-proyecto-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fullWidthModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-full-width">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title" id="fullWidthModalLabel">Detalle de la tarea </h4>
+              <h4 class="modal-title" id="fullWidthModalLabel">Asignar Nueva Tarea a: <b>ESTEFANNY NICOLE GARCIA GUEVARA</b></h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
             </div>
             <div class="modal-body">
@@ -227,118 +223,478 @@
                 <div class="col-xxl-12 col-xl-7">
                   <div class="card d-block">
                     <div class="card-body">
-                      <div class="dropdown card-widgets">
-                                                                                    <div class="d-flex">
-                                                                                        <img src="assets/images/users/avatar-9.jpg" alt="Arya S" class="rounded-circle me-2" height="24" title="Patricia Herrera">
-                                                                                        <img src="assets/images/users/avatar-3.jpg" alt="Arya S" class="rounded-circle me-2" height="24" title="Sebastian Paz">
-                                                                                    </div>
+                      <h5>Responsable Actual:</h5>
+                      <hr>
+                      <div class="row">
+                        <div class="col-12">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Tipo de Tarea <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <select class="form-select" id="example-select" disabled>
+                              <option selected>Proyecto de Implementación</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Elija el rango de fechas <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <input type="text" class="form-control date" id="singledaterange" data-toggle="date-picker" data-cancel-class="btn-warning">
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Fecha</p>
+                          <div class="d-flex">
+                            <input type="date" id="simpleinput" class="form-control" value="2025-07-07" disabled>
+                          </div>
+                        </div>
+                        <div class="col-1">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">T. Estimado</p>
+                          <div class="d-flex">
+                            <input type="number" id="simpleinput" class="form-control" value="2">
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">T. Acumulado</p>
+                          <div class="d-flex">
+                            <input type="number" id="simpleinput" class="form-control" value="8" disabled>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Hora Inicio</p>
+                          <div class="d-flex">
+                            <input class="form-control" id="example-time" type="time" name="time" value="09:00">
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Hora Fin</p>
+                          <div class="d-flex">
+                            <input class="form-control" id="example-time" type="time" name="time" value="11:00">
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">.</p>
+                          <div class="d-flex">
+                            <button type="button" class="btn btn-danger"><i class="mdi mdi-window-close"></i> </button> | <button type="button" class="btn btn-dark"><i class="mdi mdi-eye"></i></button> | <button type="button" class="btn btn-success"><i class="mdi mdi-plus-thick"></i></button>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Fecha</p>
+                          <div class="d-flex">
+                            <input type="date" id="simpleinput" class="form-control" value="2025-07-07" disabled>
+                          </div>
+                        </div>
+                        <div class="col-1">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">T. Estimado</p>
+                          <div class="d-flex">
+                            <input type="number" id="simpleinput" class="form-control" value="2">
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">T. Acumulado</p>
+                          <div class="d-flex">
+                            <input type="number" id="simpleinput" class="form-control" value="10" style="background: #FFEB9C;" disabled>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Hora Inicio</p>
+                          <div class="d-flex">
+                            <input class="form-control" id="example-time" type="time" name="time" value="16:00">
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Hora Fin</p>
+                          <div class="d-flex">
+                            <input class="form-control" id="example-time" type="time" name="time" value="18:00">
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">.</p>
+                          <div class="d-flex">
+                            <button type="button" class="btn btn-danger"><i class="mdi mdi-window-close"></i> </button> | <button type="button" class="btn btn-dark"><i class="mdi mdi-eye"></i> </button>| <button type="button" class="btn btn-success"><i class="mdi mdi-plus-thick"></i></button>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Total de horas <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <input type="number" id="simpleinput" class="form-control" value="4" disabled>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Cliente <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <select class="form-select" id="example-select" disabled>
+                              <option selected>ANTAMINA</option>
+                            </select>
+                          </div>
+                        </div>                        
+                        <div class="col-8">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Proyecto de Implementación <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <select class="form-select" id="example-select" disabled>
+                              <option selected>Proyecto LMS</option>
+                              <option>Proyecto IAS</option>
+                              <option>Proyecto ECP</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Espacio de Trabajo</p>
+                          <div class="d-flex">
+                            <input type="text" id="simpleinput" class="form-control" value="ANTAMINA" disabled>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Perfil Consultor</p>
+                          <div class="d-flex">
+                            <select class="form-select" id="example-select" disabled>
+                              <option selected>Web Developer</option>
+                              <option>Abap</option>
+                              <option>Administración</option>
+                              <option>BTP</option>
+                            </select>
+                          </div>
+                        </div>                        
+                        <div class="col-6">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">PEP <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <select class="form-select" id="example-select" disabled>
+                              <option selected>X05-20_ANTA-IMP</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Lider del Proyecto <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <select class="form-select" id="example-select" disabled>
+                              <option selected>LUIS ALBERTO GOMEZ GONZALES</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Nombre de la Tarea <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <input type="text" id="simpleinput" class="form-control" value="Realizar prototipos">
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Estado</p>
+                          <div class="d-flex">
+                            <div class="btn-group" style="width: 530PX;">
+                              <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Estado
+                              </button>
+                              <div class="dropdown-menu" style="width: 156px;">
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-checkbox-blank-circle" style="color: gris;"></i> Asignado</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-checkbox-blank-circle" style="color: orange;"></i> En Proceso</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-checkbox-blank-circle" style="color: blue;"></i>Terminado</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-checkbox-blank-circle" style="color: green;"></i>Cerrado</a>                                
+                                 <a class="dropdown-item" href="#"><i class="mdi mdi-checkbox-blank-circle" style="color: red;"></i>Cancelado</a>
+                                <!-- <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#estados-modal"><i class="dripicons-gear" style="color: black;"></i> configuración</a> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Prioridad</p>
+                          <div class="d-flex">
+                            <div class="btn-group" style="width: 530PX;">
+                              <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Prioridad
+                              </button>
+                              <div class="dropdown-menu" style="width: 311px;">
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-checkbox-blank-circle" style="color: gris;"></i> Baja</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-checkbox-blank-circle" style="color: orange;"></i> media</a>
+                                <a class="dropdown-item" href="#"><i class="mdi mdi-checkbox-blank-circle" style="color: red;"></i>alta</a>
+                                <!-- <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="dripicons-gear" style="color: black;"></i> configuración</a> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Tipo <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <select class="form-select" id="example-select">
+                              <option>Tarea</option>
+                              <option>Hito</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Categoría</p>
+                          <div class="d-flex">
+                            <select class="form-select" id="status-select">
+                              <option selected="">Escoger una Categoría</option>
+                              <option>Garantía</option>
+                              <option>Incidencia</option>
+                              <option value="1">Control de Cambio</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Fase <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <select class="form-select" id="example-select">
+                              <option selected>Fase 1 - DESCUBIR</option>
+                              <option>Fase 2 - PREPARAR</option>
+                              <option>Fase 3 - EXPLORAR</option>
+                              <option>Fase 4 - REALIZAR</option>
+                              <option>Fase 5 - DESPLEGAR</option>
+                              <option>Fase 6 - EJECUTAR</option>
+                            </select>
+                          </div>
+                        </div>
+                        
+                        <div class="col-12">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Consultores a Participar <span style="color: red;">(*)</span></p>
+                          <div class="d-flex">
+                            <select class="form-select" id="example-select">
+                              <option selected>ESTEFANNY NICOLE GARCÍA GUEVARA</option>
+                              <option>SANDRA MEDINA</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Descripción People Planner</p>
+                          <div class="d-flex">
+                            <textarea class="form-control" id="example-textarea" rows="5"></textarea>
+                          </div>                            
+                        </div>
                       </div>
-                      <div class="form-check float-start">
-                                                                                    <input type="checkbox" class="form-check-input" id="completedCheck">
-                                                                                    <label class="form-check-label" for="completedCheck">
-                                                                                        Marcar como completada
-                                                                                    </label>
+                      <h5 class="mt-4 mb-2 font-16">Enlaces <button type="button" class="btn btn-sm btn-outline-info px-1 py-0" data-bs-toggle="modal" data-bs-target="#enlace-modal"> <i class='uil uil-file-upload me-1 font-16'></i></button></h5>
+                      <div class="card mb-2 shadow-none border">
+                        <div class="p-1">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <div class="avatar-sm">
+                                <span class="avatar-title rounded">.ZIP</span>
+                              </div>
+                            </div>
+                            <div class="col ps-0">
+                              <a href="javascript:void(0);" class="text-muted fw-bold">plantilla.zip</a>
+                              <p class="mb-0">2.3 MB</p>
+                            </div>
+                            <div class="col-auto" id="tooltip-container9">
+                              <a href="https://siar.regioncajamarca.gob.pe/documentos/acta-constitucion-cam-provincia-san-miguel" class="btn btn-link btn-lg text-muted">
+                                <i class=" dripicons-arrow-thin-right"></i>
+                              </a>
+                              <a href="javascript:void(0);" class="btn btn-link btn-lg text-muted" data-bs-toggle="modal" data-bs-target="#edit-enlace-modal">
+                                <i class="dripicons-document-edit"></i>
+                              </a>
+                              <a href="javascript:void(0);" class="btn btn-link btn-lg text-muted">
+                                <i class="dripicons-document-delete"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                                                                                <div class="clearfix"></div>
-                                                                                <h3 class="mt-3">Creación de prototipo 1</h3>
-                                                                                <div class="row">
-                                                                                    <div class="col-3">
-                                                                                        <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Rango de fecha</p>
-                                                                                        <div class="d-flex">
-                                                                                            <input type="text" class="form-control date" id="singledaterange" data-toggle="date-picker" data-cancel-class="btn-warning">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-3">
-                                                                                        <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Duración Estimada</p>
-                                                                                        <div class="d-flex">
-                                                                                            <input type="number" id="simpleinput" class="form-control" value="5">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-3">
-                                                                                        <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Estado</p>
-                                                                                        <div class="d-flex">
-                                                                                            <select class="form-select" id="example-select">
-                                                                                                <option>Pendiente</option>
-                                                                                                <option>En Progreso</option>
-                                                                                                <option selected>Revisar</option>
-                                                                                                <option>Hecho</option>
-                                                                                                <hr>
-                                                                                                <option>configuración</option>
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-3">
-                                                                                        <p class="mt-2 mb-1 text-muted fw-bold font-12 text-uppercase">Prioridad</p>
-                                                                                        <div class="d-flex">
-                                                                                            <select class="form-select" id="example-select">
-                                                                                                <option>Baja</option>
-                                                                                                <option selected>media</option>
-                                                                                                <option>alta</option>
-                                                                                                <option>Urgente</option>
-                                                                                                <hr>
-                                                                                                <option>configuración</option>
-                                                                                            </select>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <h5 class="mt-3">Descripción de la tarea:</h5>
-                                                                                <p class="text-muted mb-4">
-                                                                                    Aquí se podrá descripbir la tarea pero será un campo opcional si es que se quiere dar más detalle
-                                                                                </p>
-                                                                                <h5 class="mt-4 mb-2 font-16">Links <button type="button" class="btn btn-sm btn-outline-info px-1 py-0"> <i class='uil uil-file-upload me-1 font-16'></i></button></h5>
-                                                                                <div class="card mb-2 shadow-none border">
-                                                                                    <div class="p-1">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <div class="avatar-sm">
-                                                                                                    <span class="avatar-title rounded">
-                                                                                                        .ZIP
-                                                                                                    </span>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">plantilla.zip</a>
-                                                                                                <p class="mb-0">2.3 MB</p>
-                                                                                            </div>
-                                                                                            <div class="col-auto" id="tooltip-container9">
-                                                                                                <a href="javascript:void(0);" data-bs-container="#tooltip-container9" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Eliminar" class="btn btn-link text-danger btn-lg p-0">
-                                                                                                    <i class='uil uil-multiply'></i>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="card mb-2 shadow-none border">
-                                                                                    <div class="p-1">
-                                                                                        <div class="row align-items-center">
-                                                                                            <div class="col-auto">
-                                                                                                <img src="assets/images/projects/project-1.jpg" class="avatar-sm rounded" alt="file-image">
-                                                                                            </div>
-                                                                                            <div class="col ps-0">
-                                                                                                <a href="javascript:void(0);" class="text-muted fw-bold">iteración1.docx</a>
-                                                                                                <p class="mb-0">1.25 MB</p>
-                                                                                            </div>
-                                                                                            <div class="col-auto" id="tooltip-container10">
-                                                                                                <a href="javascript:void(0);" data-bs-container="#tooltip-container10" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Eliminar" class="btn btn-link text-danger btn-lg p-0">
-                                                                                                    <i class='uil uil-multiply'></i>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
+                      <div class="card mb-2 shadow-none border">
+                        <div class="p-1">
+                          <div class="row align-items-center">
+                            <div class="col-auto">
+                              <img src="assets/images/projects/project-1.jpg" class="avatar-sm rounded" alt="file-image">
+                            </div>
+                            <div class="col ps-0">
+                              <a href="javascript:void(0);" class="text-muted fw-bold">iteración1.docx</a>
+                              <p class="mb-0">1.25 MB</p>
+                            </div>
+                            <div class="col-auto" id="tooltip-container9">
+                              <a href="javascript:void(0);" class="btn btn-link btn-lg text-muted">
+                                <i class=" dripicons-arrow-thin-right"></i>
+                              </a>
+                              <a href="javascript:void(0);" class="btn btn-link btn-lg text-muted">
+                                <i class="dripicons-document-edit"></i>
+                              </a>
+                              <a href="javascript:void(0);" class="btn btn-link btn-lg text-muted">
+                                <i class="dripicons-document-delete"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-link">Ver más Documentos</button>
                     </div> 
                   </div>
                 </div>                                          
               </div>
+              <hr>
+              <h5>Creación: Juan Carlos Gomez el 02/07/2025, 2:45 pm</h5>
+              <h5>Modificación: Juan Carlos Gomez el 02/07/2025, 2:47 pm</h5>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-info">Guardar cambios</button>
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-info" style="background-color: #1A396C;">Crear</button>
             </div>
           </div>
         </div>
       </div>
-      <!--  modal detalle tarea fin -->
+      <!--  modal ASIGNACIÓN proyecto fin -->
+
+      <!-- modal configuración estados inicio -->
+      <div class="modal fade" id="estados-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content" style="background: #f4f4f5; border-color: #B8EFE2; border-width: 0.3cap;">
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title" id="myCenterModalLabel">Configuración de Estados</h4>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row" data-plugin="dragula" data-containers='["handle-dragula-left", "handle-dragula-right"]' data-handleclass="dragula-handle">
+                                                                    <div class="col-md-12">
+                                                                        <div class="bg-dragula p-2 p-lg-4">
+                                                                            <div class="input-group">
+                                                                                <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                                                                    <option selected>Plantilla de Estados</option>
+                                                                                    <option>Kanban</option>
+                                                                                    <option>Marketing</option>
+                                                                                    <option>Nomral</option>
+                                                                                    <option>Scrum</option>
+                                                                                </select>
+                                                                                <button class="btn btn-outline-success" type="button"><i class='mdi mdi-plus-thick font-16'></i></button>
+                                                                            </div>
+                                                                            <div id="handle-dragula-left" class="py-2">
+                                                                                <div class="card mb-0 mt-2" style="height: 62px;">
+                                                                                    <div class="card-body">
+                                                                                        <div class="d-flex align-items-start">
+                                                                                            <i class="mdi mdi-checkbox-blank-circle" style="color: gray;"></i>
+                                                                                            <div class="w-100 overflow-hidden">
+                                                                                                <h5 class="mb-1 mt-1"> Pendiente</h5>
+                                                                                            </div>
+                                                                                            <i class='mdi mdi-pencil font-16' style="color: orange;"></i>
+                                                                                            <i class='mdi mdi-invert-colors font-16' style="color: blueviolet;"></i>
+                                                                                            <i class='mdi mdi-delete font-16' style="color: red;"></i>
+                                                                                            <span class="dragula-handle"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="card mb-0 mt-2" style="height: 62px;">
+                                                                                    <div class="card-body">
+                                                                                        <div class="d-flex align-items-start">
+                                                                                            <i class="mdi mdi-checkbox-blank-circle" style="color: orange;"></i>
+                                                                                            <div class="w-100 overflow-hidden">
+                                                                                                <h5 class="mb-1 mt-1"> En Progreso</h5>
+                                                                                            </div>
+                                                                                            <i class='mdi mdi-pencil font-16' style="color: orange;"></i>
+                                                                                            <i class='mdi mdi-invert-colors font-16' style="color: blueviolet;"></i>
+                                                                                            <i class='mdi mdi-delete font-16' style="color: red;"></i>
+                                                                                            <span class="dragula-handle"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="card mb-0 mt-2" style="height: 62px;">
+                                                                                    <div class="card-body">
+                                                                                        <div class="d-flex align-items-start">
+                                                                                            <i class="mdi mdi-checkbox-blank-circle" style="color: blue;"></i>
+                                                                                            <div class="w-100 overflow-hidden">
+                                                                                                <h5 class="mb-1 mt-1"> Revisar</h5>
+                                                                                            </div>
+                                                                                            <i class='mdi mdi-pencil font-16' style="color: orange;"></i>
+                                                                                            <i class='mdi mdi-invert-colors font-16' style="color: blueviolet;"></i>
+                                                                                            <i class='mdi mdi-delete font-16' style="color: red;"></i>
+                                                                                            <span class="dragula-handle"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="card mb-0 mt-2" style="height: 62px;">
+                                                                                    <div class="card-body">
+                                                                                        <div class="d-flex align-items-start">
+                                                                                            <i class="mdi mdi-checkbox-blank-circle" style="color: green;"></i>
+                                                                                            <div class="w-100 overflow-hidden">
+                                                                                                <h5 class="mb-1 mt-1"> Hecho</h5>
+                                                                                            </div>
+                                                                                            <i class='mdi mdi-pencil font-16' style="color: orange;"></i>
+                                                                                            <i class='mdi mdi-invert-colors font-16' style="color: blueviolet;"></i>
+                                                                                            <i class='mdi mdi-delete font-16' style="color: red;"></i>
+                                                                                            <span class="dragula-handle"></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div> 
+                                                                    </div>
+                        
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
+                                                                <button type="button" class="btn btn-info">Aplicar Cambios</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+      </div>
+      <!-- modal configuración estados fin -->
+
+      <!-- modal Enlaces Inicio  -->
+      <div class="modal fade" id="enlace-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background: #f4f4f5; border-color: #a6c7d0; border-width: 0.3cap;">
+                    <div class="modal-header" >
+                    <h4 class="modal-title" id="myCenterModalLabel">Nueva Enlace</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="simpleinput" class="form-label">Nombre del enlace </label><span style="color: red;">(*)</span>
+                    <input type="text" id="simpleinput" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="simpleinput" class="form-label">Pegar el enlaces que deseas compartir </label> <span style="color: red;">(*)</span>
+                        <input type="text" id="simpleinput" class="form-control">
+                    </div>
+                        <button type="submit" class="btn btn-info">Añadir</button>
+                        <button type="submit" class="btn btn-dark">cancelar</button>
+                    </div>
+                </div>
+                </div>
+      </div>
+      <!-- modal Enlaces fin -->
+
+      <!-- modal EDIT Enlaces Inicio  -->
+      <div class="modal fade" id="edit-enlace-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" style="background: #f4f4f5; border-color: #a6c7d0; border-width: 0.3cap;">
+                    <div class="modal-header" >
+                        <h4 class="modal-title" id="myCenterModalLabel">Editar Enlace</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                    </div>
+                    <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="simpleinput" class="form-label">Nombre del enlace </label><span style="color: red;">(*)</span>
+                        <input type="text" id="simpleinput" class="form-control" value="Acta de Constitución">
+                    </div>
+                    <div class="mb-3">
+                        <label for="simpleinput" class="form-label">Pegar el enlaces que deseas compartir </label> <span style="color: red;">(*)</span>
+                        <input type="text" id="simpleinput" class="form-control" value="https://siar.regioncajamarca.gob.pe/documentos/acta-constitucion-cam-provincia-san-miguel">
+                    </div>
+                        <button type="submit" class="btn btn-info">Aplicar Cambios</button>
+                        <button type="submit" class="btn btn-dark">cancelar</button>
+                    </div>
+                </div>
+                </div>
+      </div>
+      <!-- modal EDIT Enlaces fin -->
+
+      <!-- modal Enlaces Inicio  -->
+      <div class="modal fade" id="enlace-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background: #f4f4f5; border-color: #a6c7d0; border-width: 0.3cap;">
+            <div class="modal-header" >
+              <h4 class="modal-title" id="myCenterModalLabel">Nueva Enlace</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="simpleinput" class="form-label">Pegar el enlaces que deseas compartir</label>
+                <input type="text" id="simpleinput" class="form-control">
+              </div>
+                <button type="submit" class="btn btn-info">Añadir</button>
+                <button type="submit" class="btn btn-dark">cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal Enlaces fin -->
+
       <footer class="footer">
         <div class="container-fluid">
           <div class="row">

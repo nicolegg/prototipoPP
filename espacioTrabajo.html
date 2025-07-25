@@ -59,13 +59,13 @@
                                 <ul class="side-nav-second-level">
                                     <li class="side-nav-item">
                                         <a data-bs-toggle="collapse" href="#sidebarSecondLevel" aria-expanded="false" aria-controls="sidebarSecondLevel">
-                                            <span> Espacio de Trabajo #1 </span>
+                                            <span> ANTAMINA </span>
                                             <span class="menu-arrow"></span>
                                         </a>
                                         <div class="collapse" id="sidebarSecondLevel">
                                             <ul class="side-nav-third-level">
                                                 <li>
-                                                    <a href="documento.html">Proyecto 1</a>
+                                                    <a href="documento.html">Proyecto LMS</a>
                                                 </li>
                                                 <li>
                                                     <a href="#">Proyecto 2</a>
@@ -179,13 +179,11 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box">
-                                    <h4 class="page-title text-muted text-uppercase">Te damos la bienvenida a tu nuevo espacio de trabajo</h4>
+                                    <h4 class="page-title text-muted text-uppercase">Te damos la bienvenida a tu espacio de trabajo</h4>
                                 </div>
                             </div>
                         </div>     
                         <!-- end page title --> 
-
-
                         <div class="row">
                             <div class="col-sm-12">
                                 <!-- Profile -->
@@ -203,15 +201,14 @@
                                                     </div>
                                                     <div class="col">
                                                         <div>
-                                                            <h4 class="mt-1 mb-1">Espacio de Trabajo #1</h4>
-                                                            <p class="font-13 text-50"> Descripción del espacio de Trabajo</p>
+                                                            <h4 class="mt-1 mb-1">ANTAMINA</h4>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="text-center mt-sm-0 mt-3 text-sm-end">
-                                                    <button type="button" class="btn btn-light">
+                                                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#editespaciotrabajo">
                                                         <i class="mdi mdi-folder-edit-outline me-1"></i> Editar
                                                     </button>
                                                     <button type="button" class="btn btn-light">
@@ -229,21 +226,41 @@
                                 <div class="row">
                                     <button type="button" class="btn btn-outline-info" style="width: 250px; height: 135px;" data-bs-toggle="modal" data-bs-target="#centermodal"><i class="uil-chart-line"></i> Nuevo proyecto</button>
                                     <div class="col-sm-4">
-                                        <div class="card tilebox-one">
+                                        <div class="card d-block">
                                             <div class="card-body">
-                                                <i class="dripicons-basket float-end text-muted"></i>
-                                                <h6 class="text-muted text-uppercase mt-0">Proyecto #1</h6>
-                                                <a href="documento.html"><h2 class="m-b-20">Aenza</h2></a>
+                                                <div class="dropdown card-widgets">
+                                                    <a href="#" class="dropdown-toggle arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="dripicons-dots-3"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                        <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#editproyecto"><i class="mdi mdi-circle-edit-outline me-1"></i>Editar</a>
+                                                        <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#traspasarProyecto"><i class="mdi mdi-exit-to-app me-1"></i>Traspasar</a>
+                                                        <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#pausarProyecto"><i class="mdi mdi-stop-circle-outline me-1"></i>Pausar</a>
+                                                        <a href="javascript:void(0);" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#cancelProyecto"><i class="mdi mdi-cancel me-1"></i>Cancelar</a>
+                                                    </div>
+                                                </div>
+                                                <h6 class="text-muted text-uppercase mt-0">ANTAMINA </h6>
+                                                <a href="documento.html"><h2 class="m-b-20">Proyecto LMS</h2></a>
                                                 <span class="badge bg-warning"> en progreso </span> <span class="text-muted">2025 - 2026</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="card tilebox-one">
+                                        <div class="card d-block">
                                             <div class="card-body">
-                                                <i class="dripicons-box float-end text-muted"></i>
-                                                <h6 class="text-muted text-uppercase mt-0">Proyecto #2</h6>
-                                                <h2 class="m-b-20">Antamina</h2>
+                                                <div class="dropdown card-widgets">
+                                                    <a href="#" class="dropdown-toggle arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="dripicons-dots-3"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-end">
+                                                        <a href="javascript:void(0);" class="dropdown-item" ><i class="mdi mdi-circle-edit-outline me-1" ></i>Editar</a>
+                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-exit-to-app me-1"></i>Traspasar</a>
+                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-stop-circle-outline me-1"></i>Pausar</a>
+                                                        <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-cancel me-1"></i>Cancelar</a>
+                                                    </div>
+                                                </div>
+                                                <h6 class="text-muted text-uppercase mt-0"> ANTAMINA </h6>
+                                                <h2 class="m-b-20">Proyecto IAS</h2>
                                                 <span class="badge bg-success"> terminado </span> <span class="text-muted">2023-2024</span>
                                             </div>
                                         </div>
@@ -254,9 +271,53 @@
                     </div>
                 </div>
 
-                <!-- MODAL DE CREACIÓN DE PROYECTO -->
-                 <div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-full-width">
+                <!-- MODAL DE EDICIÓN DE ESPACIO DE TRABAJO INICIO -->
+                <div class="modal fade" id="editespaciotrabajo" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myCenterModalLabel" style="color: black;"><b>Editar Espacio de Trabajo</b></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="avatar-md">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="avatar-lg">
+                                            <span class="avatar-title bg-warning text-dark font-22 rounded-circle " id="example-color" type="color">
+                                                <input class="avatar-title rounded-circle" id="example-color" type="color" name="color" value="#727cf5">    
+                                            </span>
+                                        </div>
+                                        <p class="mb-0 font-14 mt-1">
+                                            Elige un color
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="mb-3">
+                                    <label for="simpleinput" class="form-label">Nombre del espacio de trabajo </label> <span style="color: red;">(*)</span>
+                                    <select class="form-select" id="example-select">
+                                        <option>AENZA</option>
+                                        <option selected>ANTAMINA</option>
+                                        <option>ALICORP</option>
+                                        <option>STRACON</option>
+                                        <option>ARCOS DORADOS</option>
+                                    </select>
+                                </div>       
+                                <a href="espacioTrabajo.html"><button type="button" class="btn btn-info">Aplicar Cambios</button></a>
+                                <button type="button" class="btn btn-light">cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL DE EDICIÓN DE ESPACIO DE TRABAJO FIN-->
+
+                <!-- MODAL DE CREACIÓN DE PROYECTO INICIO -->
+                <div class="modal fade" id="centermodal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title" id="myCenterModalLabel" style="color: black;"><b>Crear nuevo Proyecto</b></h4>
@@ -265,29 +326,69 @@
                             <div class="modal-body">
                                 <form class="needs-validation" novalidate="">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <label class="form-label" for="validationCustom01">Nombre del Proyecto </label> <span style="color: red;">(*)</span>
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre del Proyecto" value="Sistema de Ventas " required="">
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre del Proyecto" value="Proyecto LMS " required="">
                                             <div class="valid-feedback">registro correcto!</div>
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="simpleinput" class="form-label">Elegir algún Cliente </label> <span style="color: red;">(*)</span>
-                                            <select class="form-select mb-3">
-                                                <option selected>Elegir un Cliente</option>
+                                            <label for="simpleinput" class="form-label">Cliente </label>
+                                            <select class="form-select mb-3" disabled>
+                                                <option >Elegir un Cliente</option>
                                                 <option value="1">Claro</option>
                                                 <option value="2">Aenza</option>
-                                                <option value="3">Antamina</option>
+                                                <option value="3" selected>Antamina</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="simpleinput" class="form-label">PEP </label> <span style="color: red;">(*)</span>
+                                            <select class="form-select mb-3">
+                                                <option selected>Elegir PEP</option>
+                                                <option value="1">X05-20_ANTA-IMP</option>
+                                                <option value="2">X05-20_ANTA-SOP</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="form-label" for="validationCustom02">Descripción del Proyecto </label> <span style="color: red;">(*)</span>
+                                    <div class="col-md-12">
+                                        <label class="form-label" for="validationCustom02">Descripción del Proyecto </label>
                                         <input type="text" class="form-control" id="validationCustom02" placeholder="Descripción del Proyecto" value="" required="">
                                         <div class="invalid-feedback">registro incorrecto!</div>
+                                    </div> 
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">Fecha de Inicio propuesta </label>
+                                            <input type="date" class="form-control" id="validationCustom02" placeholder="2025-07-09" value="2025-07-09">
+                                            <div class="invalid-feedback">registro incorrecto!</div>
+                                        </div>   
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">Fecha de Fin propuesta</label>
+                                            <input type="date" class="form-control" id="validationCustom02" placeholder="08-07-2026" value="2025-10-09">
+                                            <div class="invalid-feedback">registro incorrecto!</div>
+                                        </div> 
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">Duración</label>
+                                            <input type="text" class="form-control" id="validationCustom02" placeholder="30" value="30">
+                                            <div class="invalid-feedback">registro incorrecto!</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">.</label>
+                                            <select class="form-select mb-3">
+                                                <option value="1">Horas</option>
+                                                <option value="1">Días</option>
+                                                <option value="2">Semanas</option>
+                                                <option value="2">Meses</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    
+                                      
+                                    <div class="col-md-12">
+                                            <a class="nav-link end-bar-toggle" href="javascript: void(0);">
+                                                <button type="button" class="btn btn-link btn-rounded"><i class="uil-cog"></i> Selecciona una plantilla <span style="color: red;">(*)</span></button>
+                                            </a>
+                                        </div>                                
                                     <hr>
-                                    <label for="simpleinput" class="form-label" style="color: black;"><b>COMPARTIR PROYECTO</b></label>
+                                    <!-- <label for="simpleinput" class="form-label" style="color: black;"><b>COMPARTIR PROYECTO</b></label>
                                         <div class="row">
                                                     <div class="col-md-3">
                                                         <select class="form-select mb-3 ">
@@ -483,7 +584,7 @@
                                                             </div>
                                                         </form>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                     <button class="btn btn-info" type="submit"><a href="documento.html" style="color: white;">Crear Proyecto</a></button>
                                     <button class="btn btn-light" type="submit">Cancelar</button>
                                 </form>
@@ -491,6 +592,306 @@
                         </div>
                     </div>
                 </div>
+                <!-- MODAL DE CREACIÓN DE PROYECTO FIN-->
+                 
+                <!-- MODAL DE EDITAR DE PROYECTO INICIO -->
+                <div class="modal fade" id="editproyecto" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myCenterModalLabel" style="color: black;"><b>Editar Proyecto</b></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="needs-validation" novalidate="">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="form-label" for="validationCustom01">Nombre del Proyecto </label> <span style="color: red;">(*)</span>
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre del Proyecto" value="Proyecto LMS " required="">
+                                            <div class="valid-feedback">registro correcto!</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="simpleinput" class="form-label">Cliente </label>
+                                            <select class="form-select mb-3" disabled>
+                                                <option >Elegir un Cliente</option>
+                                                <option value="1">Claro</option>
+                                                <option value="2">Aenza</option>
+                                                <option value="3" selected>Antamina</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="simpleinput" class="form-label">PEP </label> <span style="color: red;">(*)</span>
+                                            <select class="form-select mb-3">
+                                                <option>Elegir PEP</option>
+                                                <option value="1" selected>X05-20_ANTA-IMP</option>
+                                                <option value="2">X05-20_ANTA-SOP</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label" for="validationCustom02">Descripción del Proyecto </label>
+                                        <input type="text" class="form-control" id="validationCustom02" placeholder="Descripción del Proyecto" value="descripción del proyecto que puede ser editado" required="">
+                                        <div class="invalid-feedback">registro incorrecto!</div>
+                                    </div> 
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">Fecha de Inicio propuesta </label>
+                                            <input type="date" class="form-control" id="validationCustom02" placeholder="2025-07-09" value="2025-07-09">
+                                            <div class="invalid-feedback">registro incorrecto!</div>
+                                        </div>   
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">Fecha de Fin propuesta</label>
+                                            <input type="date" class="form-control" id="validationCustom02" placeholder="08-07-2026" value="2025-10-09">
+                                            <div class="invalid-feedback">registro incorrecto!</div>
+                                        </div> 
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">Duración</label>
+                                            <input type="text" class="form-control" id="validationCustom02" placeholder="30" value="30">
+                                            <div class="invalid-feedback">registro incorrecto!</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">.</label>
+                                            <select class="form-select mb-3">
+                                                <option value="1">Horas</option>
+                                                <option value="1">Días</option>
+                                                <option value="2">Semanas</option>
+                                                <option value="2" selected>Meses</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                      
+                                    <div class="col-md-12">
+                                            <a class="nav-link end-bar-toggle" href="javascript: void(0);">
+                                                <button type="button" class="btn btn-link btn-rounded"><i class="uil-cog"></i> Selecciona una plantilla <span style="color: red;">(*)</span></button>
+                                            </a>
+                                        </div>                                
+                                    <hr>
+                                    <button class="btn btn-info" type="submit"><a href="documento.html" style="color: white;">Aplicar Cambios</a></button>
+                                    <button class="btn btn-light" type="submit">Cancelar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL DE EDITAR DE PROYECTO FIN-->
+                
+                <!-- MODAL DE TRASPASO DE PROYECTO INICIO -->
+                <div class="modal fade" id="traspasarProyecto" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myCenterModalLabel" style="color: black;"><b>Traspasar un Proyecto</b></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="simpleinput" class="form-label">Elija un Gerente de Proyecto </label> <span style="color: red;">(*)</span>
+                                    <select class="form-select" id="example-select">
+                                        <option>Jennifer Llerena</option>
+                                        <option>Patricia Herrera</option>
+                                        <option>Luis Gomez</option>
+                                        <option selected>Jorge Orihuela</option>
+                                    </select>
+                                </div>       
+                                <a href="espacioTrabajo.html"><button type="button" class="btn btn-info">Aplicar Cambios</button></a>
+                                <button type="button" class="btn btn-light">cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL DE TRASPASO DE PROYECTO FIN-->
+
+                <!-- MODAL DE PONER EN PAUSA EL PROYECTO INICIO -->
+                <div class="modal fade" id="pausarProyecto" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myCenterModalLabel" style="color: black;"><b>Poner "En Pausa" al Proyecto</b></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="needs-validation" novalidate="">
+                                    <div class="col-md-12">
+                                        <label class="form-label" for="validationCustom02">Menciona el motivo de poner en pausa al Proyecto </label>
+                                        <textarea class="form-control" id="example-textarea" rows="5">las solicitudes de los clientes se salieron del alcance y se tiene que reevaluar la propuesta</textarea>
+                                    </div> 
+                                    <br>
+                                    <div class="row"> 
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">Fecha de programación</label>
+                                            <input type="date" class="form-control" id="validationCustom02" placeholder="08-07-2026" value="2025-10-09">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <button class="btn btn-info" type="submit"><a href="documento.html" style="color: white;">Poner en Pausa</a></button>
+                                    <button class="btn btn-light" type="submit">Cancelar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL DE PONER EN PAUSA EL PROYECTO FIN-->
+
+                <!-- MODAL DE CANCELAR EL PROYECTO INICIO -->
+                <div class="modal fade" id="cancelProyecto" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myCenterModalLabel" style="color: black;"><b>Cancelar un Proyecto</b></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="needs-validation" novalidate="">
+                                    <div class="col-md-12">
+                                        <label class="form-label" for="validationCustom02">Menciona el motivo de cancelación del Proyecto </label>
+                                        <textarea class="form-control" id="example-textarea" rows="5">El cliente decidio no continuar con el proyecto</textarea>
+                                    </div> 
+                                    <br>
+                                    <div class="row"> 
+                                        <div class="col-md-6">
+                                            <label class="form-label" for="validationCustom02">Fecha de programación</label>
+                                            <input type="date" class="form-control" id="validationCustom02" placeholder="08-07-2026" value="2025-10-09">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <button class="btn btn-info" type="submit"><a href="documento.html" style="color: white;">Cancelar Proyecto</a></button>
+                                    <button class="btn btn-light" type="submit">Cerrar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL DE CANCELAR EL PROYECTO FIN-->
+
+                <!-- MODAL PLANTILLAS INICIO -->
+                <div class="end-bar">
+                    <div class="rightbar-title">
+                        <a href="javascript:void(0);" class="end-bar-toggle float-end">
+                            <i class="dripicons-cross noti-icon"></i>
+                        </a>
+                        <h5 class="m-0">Plantillas Estandarizadas</h5>
+                    </div>
+
+                    <div class="rightbar-content h-100" data-simplebar="">
+
+                        <div class="p-3">
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Selecciona </strong> la plantilla que se adecue a tu proyecto.
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane show active" id="justified-tabs-preview">
+                                    <ul class="nav nav-pills bg-nav-pills nav-justified mb-3">
+                                        <li class="nav-item">
+                                            <a href="#SapActivate" data-bs-toggle="tab" aria-expanded="true" class="nav-link rounded-0 active" >
+                                                <i class="mdi mdi-home-variant d-md-none d-block"></i>
+                                                <span class="d-none d-md-block">Sap Activate</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#Scrum" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0 ">
+                                                <i class="mdi mdi-account-circle d-md-none d-block"></i>
+                                                <span class="d-none d-md-block">Scrum</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#libre" data-bs-toggle="tab" aria-expanded="false" class="nav-link rounded-0">
+                                                <i class="mdi mdi-settings-outline d-md-none d-block"></i>
+                                                <span class="d-none d-md-block">Configuración Libre</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+        
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="SapActivate">
+                                            <h5 class="mt-3">Fases</h5>
+                                            <hr class="mt-1">
+                                            <div class="form-check mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor1">
+                                                <label class="form-check-label" for="customCheckcolor1">Fase 1 - DESCUBIR</label>
+                                            </div>
+                                            <div class="form-check form-checkbox-success mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor2" >
+                                                <label class="form-check-label" for="customCheckcolor2">Fase 2 - PREPARAR</label>
+                                            </div>
+                                            <div class="form-check form-checkbox-info mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor3" >
+                                                <label class="form-check-label" for="customCheckcolor3">Fase 3 - EXPLORAR</label>
+                                            </div>
+                                            <div class="form-check form-checkbox-secondary mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor6" >
+                                                <label class="form-check-label" for="customCheckcolor6">Fase 4 - REALIZAR</label>
+                                            </div>
+                                            <div class="form-check form-checkbox-warning mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor4">
+                                                <label class="form-check-label" for="customCheckcolor4">Fase 5 - DESPLEGAR</label>
+                                            </div>
+                                            <div class="form-check form-checkbox-danger mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor5">
+                                                <label class="form-check-label" for="customCheckcolor5">Fase 6 - EJECUTAR</label>
+                                            </div>
+                                            <div class="d-grid mt-4">
+                                                <button class="btn btn-primary">Marcar Todo</button>
+                                                <a href="" class="btn btn-info mt-3"><i class="mdi mdi-basket me-1"></i> Guardar Cambios</a><br>
+                                                <button class="btn btn-secondary">Cancelar</button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane " id="Scrum">
+                                            <h5 class="mt-3">Fases</h5>
+                                            <hr class="mt-1">
+                                            <div class="form-check mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor1">
+                                                <label class="form-check-label" for="customCheckcolor1">Fase 1 - INICIO</label>
+                                            </div>
+                                            <div class="form-check form-checkbox-success mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor2" >
+                                                <label class="form-check-label" for="customCheckcolor2">Fase 2 - PLANIFICACIÓN </label>
+                                            </div>
+                                            <div class="form-check form-checkbox-info mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor3" >
+                                                <label class="form-check-label" for="customCheckcolor3">Fase 3 - ESTIMACIÓN</label>
+                                            </div>
+                                            <div class="form-check form-checkbox-secondary mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor6" >
+                                                <label class="form-check-label" for="customCheckcolor6">Fase 4 - IMPLEMENTACIÓN</label>
+                                            </div>
+                                            <div class="form-check form-checkbox-warning mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor4">
+                                                <label class="form-check-label" for="customCheckcolor4">Fase 5 - REVISIÓN Y RESTROSPECTIVA</label>
+                                            </div>
+                                            <div class="form-check form-checkbox-danger mb-2">
+                                                <input type="checkbox" class="form-check-input" id="customCheckcolor5">
+                                                <label class="form-check-label" for="customCheckcolor5">Fase 6 - LANZAMIENTO</label>
+                                            </div>
+                                            <div class="d-grid mt-4">
+                                                <button class="btn btn-primary">Marcar Todo</button>
+                                                <a href="" class="btn btn-info mt-3"><i class="mdi mdi-basket me-1"></i> Guardar Cambios</a><br>
+                                                <button class="btn btn-secondary">Cancelar</button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="libre">
+                                            <h5 class="mt-3">Fases</h5>
+                                            <hr class="mt-1">
+                                            <div class="mb-3">
+                                                <label for="simpleinput" class="form-label">Nombre de la Fase <button type="button" class="btn btn-sm btn-outline-info px-1 py-0" title="agregar nueva fase"> <i class='uil uil-focus-add font-16'></i> </button></label>
+                                                <div class="form-check form-checkbox-success mb-2">
+                                                    <input type="checkbox" class="form-check-input" id="customCheckcolor2" >
+                                                    <label class="form-check-label" for="customCheckcolor2">Fase 1 libre </label>
+                                                </div>
+                                                <input type="text" id="simpleinput" class="form-control" value="Fase 2 libre">
+                                            </div>
+                                            <div class="d-grid mt-4">
+                                                <a href="" class="btn btn-info mt-3"><i class="mdi mdi-basket me-1"></i> Guardar Cambios</a><br>
+                                                <button class="btn btn-secondary">Cancelar</button>
+                                            </div>
+                                        </div>
+                                    </div>                                           
+                                </div> 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- MODAL PLANTILLAS FINAL -->
 
                 <footer class="footer">
                     <div class="container-fluid">
